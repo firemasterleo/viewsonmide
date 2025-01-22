@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gsap": "^3.12.5",
+    "gsap": "^3.12.7",
     "lenis": "^1.1.18",
     "pinia": "^2.3.0",
     "pinia-plugin-persistedstate": "^4.2.0",

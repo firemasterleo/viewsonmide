@@ -14,7 +14,7 @@
     // border: solid red;
     width: 100%;
     height: fit-content;
-    overflow-x: hidden ;
+    // overflow-x: hidden ;
 }
 
 
