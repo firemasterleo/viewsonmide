@@ -134,7 +134,7 @@ onMounted(() => {
       start: 'top+=120  top', // When the top of the trigger meets the top of the viewport
       end: '300 50', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 0.8, // Smooth scrubbing with a slight lag
-      // markers: true, // Uncomment to visualize start and end points
+      markers: true, // Uncomment to visualize start and end points
     },
   });
     // Parallax effect for child2 (slower speed)
@@ -143,7 +143,7 @@ onMounted(() => {
     ease: 'none',
     scrollTrigger: {
       trigger: child2.value,
-      start: '120 180', // When the top of the trigger meets the top of the viewport
+      start: 'top+=120 180', // When the top of the trigger meets the top of the viewport
       end: '200 120',
       scrub: 0.8, // Smooth scrubbing with a slight lag
       // markers: true,
@@ -156,7 +156,7 @@ onMounted(() => {
     ease: 'none',
     scrollTrigger: {
       trigger: child3.value,
-      start: '2 200', // When the top of the trigger meets the top of the viewport
+      start: 'top+=2 200', // When the top of the trigger meets the top of the viewport
       end: 'bottom center',
       scrub: 0.8, // Smooth scrubbing with a slight lag
       // markers: true,
