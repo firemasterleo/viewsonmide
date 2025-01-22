@@ -160,6 +160,7 @@ onMounted(() => {
       end: 'bottom center',
       scrub: 0.8, // Smooth scrubbing with a slight lag
       // markers: true,
+      
     },
   });
 });
