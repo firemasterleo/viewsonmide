@@ -130,7 +130,7 @@ onMounted(() => {
   gsap.to([child1.value], {
     y: '-100%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
     scrollTrigger: {
-      trigger: '.child1', // The container that triggers the scroll
+      trigger: child1.value, // The container that triggers the scroll
       start: '120 top', // When the top of the trigger meets the top of the viewport
       end: '300 50', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 0.8, // Smooth scrubbing with a slight lag
@@ -160,7 +160,7 @@ onMounted(() => {
       end: 'bottom center',
       scrub: 0.8, // Smooth scrubbing with a slight lag
       // markers: true,
-      
+
     },
   });
 });
