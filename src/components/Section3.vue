@@ -158,8 +158,8 @@ onMounted(() => {
     scrollTrigger: {
       trigger: child3.value,
       start: 'top-=300 top+=170', // When the top of the trigger meets the top of the viewport
-      end: 'bottom-=400 top+=170',
-      scrub: 0.8, // Smooth scrubbing with a slight lag
+      end: 'bottom-=420 top+=170',
+      scrub: 1, // Smooth scrubbing with a slight lag
       // markers: true,
 
     },
