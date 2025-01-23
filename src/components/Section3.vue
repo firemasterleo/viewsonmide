@@ -8,13 +8,13 @@
           </div >
           </div>
         <div class="child">
-          <div ref="child2">
+          <div class="child2" ref="child2">
             <h1>text</h1>
           </div>
   
         </div>
         <div class="child">
-          <div ref="child3">
+          <div class="child3" ref="child3">
             <h1>text</h1>
           </div>
     
