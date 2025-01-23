@@ -5,20 +5,20 @@
         <div class="child">
           <div class="child1" ref="child1">
             <h1> STORY</h1>
-            <p>Every image captures a moment, weaving it into a story that resonates and lasts a lifetime.</p>
+            <p>Each photograph is a chapter, capturing emotions, and memories that come together to tell a story you'll cherish forever.</p>
           </div >
           </div>
         <div class="child">
           <div class="child2" ref="child2">
             <h1>VISION</h1>
-            <p>Bringing a unique perspective to each frame, turning the ordinary into extraordinary visual art.</p>
+            <p>Every frame is a canvas where imagination meets vision, turning fleeting moments into breathtaking visual masterpieces.</p>
           </div>
   
         </div>
         <div class="child">
           <div class="child3" ref="child3">
             <h1>QUALITY</h1>
-            <p>Delivering polished, professional, and timeless photographs that stand out.</p>
+            <p>Crafted with precision and care, each image reflects a timeless standard of excellence, preserving your moments in stunning detail.</p>
           </div>
     
         </div>
