@@ -131,8 +131,8 @@ onMounted(() => {
     y: '-100%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
     scrollTrigger: {
       trigger: child1.value, // The container that triggers the scroll
-      start: 'top+=120  top', // When the top of the trigger meets the top of the viewport
-      end: 'bottom-=50  top', // When the bottom of the trigger meets the bottom of the viewport
+      start: 'top+=120  top+=0', // When the top of the trigger meets the top of the viewport
+      end: 'bottom-=50  top+=0', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 1, // Smooth scrubbing with a slight lag
       // markers: true, // Uncomment to visualize start and end points
     },
@@ -143,7 +143,7 @@ onMounted(() => {
     ease: 'none',
     scrollTrigger: {
       trigger: child2.value,
-      start: 'top top+=170', // When the top of the trigger meets the top of the viewport
+      start: 'top+=0 top+=170', // When the top of the trigger meets the top of the viewport
       end: 'bottom-=150 top+=170',
       scrub: 0.8, // Smooth scrubbing with a slight lag
       // markers: true,
@@ -161,7 +161,7 @@ onMounted(() => {
       end: 'bottom-=420 top+=170',
       scrub: 1, // Smooth scrubbing with a slight lag
       // markers: true,
-      
+
 
     },
   });
