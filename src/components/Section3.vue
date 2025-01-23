@@ -131,8 +131,8 @@ onMounted(() => {
     y: '-100%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
     scrollTrigger: {
       trigger: child1.value, // The container that triggers the scroll
-      start: 'top+=120  top+=0', // When the top of the trigger meets the top of the viewport
-      end: 'bottom-=50  top+=0', // When the bottom of the trigger meets the bottom of the viewport
+      start: 'top  top+=0', // When the top of the trigger meets the top of the viewport
+      end: 'bottom  top+=0', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 1, // Smooth scrubbing with a slight lag
       markers: true, // Uncomment to visualize start and end points
     },
