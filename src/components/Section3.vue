@@ -158,37 +158,37 @@ const child3 = ref(null);
 onMounted(() => {
   // Parallax effect for child elements on scroll
   gsap.to([child1.value], {
-    y: '-100%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
+    y: '-105%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
     scrollTrigger: {
       trigger: ".child1", // The container that triggers the scroll
-      start: 'top+=120  top+=0', // When the top of the trigger meets the top of the viewport
-      end: 'bottom-=50  top+=0', // When the bottom of the trigger meets the bottom of the viewport
+      start: '120  top', // When the top of the trigger meets the top of the viewport
+      end: 'bottom  0', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 1, // Smooth scrubbing with a slight lag
-      // markers: true, // Uncomment to visualize start and end points
+      markers: true, // Uncomment to visualize start and end points
     },
   });
     // Parallax effect for child2 (slower speed)
     gsap.to(child2.value, {
-    y: '-100%', // Moves child2 up by 80%
+    y: '-105%', // Moves child2 up by 80%
     ease: 'none',
     scrollTrigger: {
       trigger: ".child2",
-      start: 'top+=0 top+=170', // When the top of the trigger meets the top of the viewport
-      end: 'bottom-=150 top+=170',
+      start: '10 170', // When the top of the trigger meets the top of the viewport
+      end: 'center 170',
       scrub: 0.8, // Smooth scrubbing with a slight lag
-      // markers: true,
+      markers: true,
       
     },
   });
 
   // Parallax effect for child3 (fastest speed)
   gsap.to(child3.value, {
-    y: '-100%', // Moves child3 up by 150%
+    y: '-105%', // Moves child3 up by 150%
     ease: 'none',
     scrollTrigger: {
       trigger: ".child3",
-      start: 'top-=300 top+=170', // When the top of the trigger meets the top of the viewport
-      end: 'bottom-=420 top+=170',
+      start: '-320 170', // When the top of the trigger meets the top of the viewport
+      end: '-420 -170',
       scrub: 1, // Smooth scrubbing with a slight lag
       // markers: true,
 
