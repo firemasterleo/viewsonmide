@@ -134,7 +134,7 @@ onMounted(() => {
       start: 'top+=120  top+=0', // When the top of the trigger meets the top of the viewport
       end: 'bottom-=50  top+=0', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 1, // Smooth scrubbing with a slight lag
-      // markers: true, // Uncomment to visualize start and end points
+      markers: true, // Uncomment to visualize start and end points
     },
   });
     // Parallax effect for child2 (slower speed)
