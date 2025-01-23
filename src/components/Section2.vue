@@ -7,12 +7,12 @@
                 <p>"Welcome to my world through my Views. Here, every picture tells a story, captures a moment, and brings emotions to life. Explore my portfolio and see the world as I see it—full of beauty, light, and untold stories."</p>
             </div>
             <div class="section2-image">
-                <img src="../assets/vom-image1.jpeg" loading="lazy" alt="">
-                <img src="../assets/vom-image6.jpeg" loading="lazy" alt="">
-                <img src="../assets/vom-image3.jpeg" loading="lazy" alt="">
-                <img src="../assets/vom-image4.jpeg" loading="lazy" alt="">
-                <img src="../assets/vom-image5.jpeg" loading="lazy" alt="">
-                <img src="../assets/vom-image7.jpeg" loading="lazy" alt="">
+                <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1737432540/vom-image1_eg1w3p.jpg" loading="lazy" alt="">
+                <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1737434479/vom-image6_wbl0in.jpg" loading="lazy" alt="">
+                <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1737609964/vom-image3_sclpta.jpg" loading="lazy" alt="">
+                <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1737609964/vom-image4_ryex35.jpg" loading="lazy" alt="">
+                <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1737609964/vom-image5_jqrlkm.jpg" loading="lazy" alt="">
+                <img src="https://res.cloudinary.com/dgdnews6i/image/upload/v1737609964/vom-image7_svvxdb.jpg" loading="lazy" alt="">
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
     // border: solid blue ;
     background-color: rgb(0, 0, 0);
     // background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(29, 27, 27) 90.2%);
-    height: 60rem;
+    height: 110vh;
     width: 100%;
     display: flex;
     overflow: hidden;

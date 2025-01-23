@@ -1,7 +1,7 @@
 <template>
             <div class="section1container">
             <div class="herosection">
-                <img class="hero-img" src="../assets/vom-heropic5.jpg" loading="lazy" alt="">   
+                <img class="hero-img" src="https://res.cloudinary.com/dgdnews6i/image/upload/v1737609966/vom-heropic5_gthosd.jpg" loading="lazy" alt="">   
                 <div class="veil">
 
                 </div>

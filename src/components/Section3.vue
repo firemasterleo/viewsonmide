@@ -23,7 +23,7 @@
       </div>
       <div class="video-container">
         <video autoplay muted loop playsinline>
-          <source src="../assets/video2.mp4" type="video/mp4">
+          <source src="https://res.cloudinary.com/dgdnews6i/video/upload/v1737609992/video2_aogmfr.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
