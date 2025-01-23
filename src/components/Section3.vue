@@ -174,7 +174,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".child1",
       start: 'center top', // When the top of the trigger meets the top of the viewport
-      end: '110% top',
+      end: '125% top',
       scrub: 1.5, // Smooth scrubbing with a slight lag
       // markers: true,
       
@@ -188,7 +188,7 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".child1",
       start: '60% top', // When the top of the trigger meets the top of the viewport
-      end: '97% top',
+      end: '120% top',
       scrub: 1.5, // Smooth scrubbing with a slight lag
       // markers: true,
 
