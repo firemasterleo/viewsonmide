@@ -161,22 +161,22 @@ onMounted(() => {
     y: '-105%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
     scrollTrigger: {
       trigger: ".child1", // The container that triggers the scroll
-      start: '120  top', // When the top of the trigger meets the top of the viewport
+      start: '40%  top', // When the top of the trigger meets the top of the viewport
       end: 'bottom  top', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 1, // Smooth scrubbing with a slight lag
-      // markers: true, // Uncomment to visualize start and end points
+      markers: true, // Uncomment to visualize start and end points
     },
   });
     // Parallax effect for child2 (slower speed)
     gsap.to(child2.value, {
     y: '-105%', // Moves child2 up by 80%
-    ease: 'none',
+    // ease: 'none',
     scrollTrigger: {
       trigger: ".child1",
       start: 'center top', // When the top of the trigger meets the top of the viewport
       end: 'bottom top',
       scrub: 1, // Smooth scrubbing with a slight lag
-      // markers: true,
+      markers: true,
       
     },
   });
