@@ -80,6 +80,7 @@
           padding-inline: 0.5rem;
           border-top: solid 1px black;
           background-color: rgb(23, 21, 21);
+          background-color: $bgcolorwhite;
           height: 100%;
           display: flex;
         flex-direction: column;
@@ -89,15 +90,15 @@
         h1 {
           font-family: Lato;
           font-size: 72px;
-          font-weight: 300;
-          color: $textcolorwhite;
+          font-weight: 400;
+          color: $textcolorblack;
 
         }
 
         p {
           // font-family: Grotesk;
-          font-weight: 200;
-          color: $textcolorwhite;
+          font-weight: 500;
+          color: $textcolorblack;
 
           
 
