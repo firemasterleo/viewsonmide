@@ -36,6 +36,7 @@
 </template>
 
 <style lang="scss" scoped>
+ @import '../sass/variables';
 .section3container {
   background-color: rgb(0, 0, 0); /* Solid black background */
   width: 100%;
@@ -77,7 +78,7 @@
         
         div {
           padding-inline: 0.5rem;
-          border-top: solid black;
+          border-top: solid 1px black;
           background-color: rgb(23, 21, 21);
           height: 100%;
           display: flex;
@@ -86,14 +87,19 @@
         // align-items: center;
         
         h1 {
-          font-family: Grotesk;
+          font-family: Lato;
           font-size: 72px;
           font-weight: 300;
+          color: $textcolorwhite;
+
         }
 
         p {
           // font-family: Grotesk;
           font-weight: 200;
+          color: $textcolorwhite;
+
+          
 
         }
 
@@ -140,6 +146,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
+  
 
 const child1 = ref(null);
 const child2 = ref(null);
