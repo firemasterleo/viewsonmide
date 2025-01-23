@@ -4,18 +4,21 @@
       <div class="text-container">
         <div class="child">
           <div class="child1" ref="child1">
-            <h1>text</h1>
+            <h1> STORY</h1>
+            <p>Every image captures a moment, weaving it into a story that resonates and lasts a lifetime.</p>
           </div >
           </div>
         <div class="child">
           <div class="child2" ref="child2">
-            <h1>text</h1>
+            <h1>VISION</h1>
+            <p>Bringing a unique perspective to each frame, turning the ordinary into extraordinary visual art.</p>
           </div>
   
         </div>
         <div class="child">
           <div class="child3" ref="child3">
-            <h1>text</h1>
+            <h1>QUALITY</h1>
+            <p>Delivering polished, professional, and timeless photographs that stand out.</p>
           </div>
     
         </div>
@@ -65,15 +68,34 @@
       display: flex;
       flex-direction: column;
       z-index: 1;
-
+      
+      
       .child {
         flex: 1;
         // border: solid red;
         overflow: hidden;
+        
         div {
+          padding-inline: 0.5rem;
           border-top: solid black;
           background-color: rgb(23, 21, 21);
           height: 100%;
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        
+        h1 {
+          font-family: Grotesk;
+          font-size: 72px;
+          font-weight: 300;
+        }
+
+        p {
+          // font-family: Grotesk;
+          font-weight: 200;
+
+        }
 
         }
       }
@@ -134,7 +156,7 @@ onMounted(() => {
       start: 'top+=120  top+=0', // When the top of the trigger meets the top of the viewport
       end: 'bottom-=50  top+=0', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 1, // Smooth scrubbing with a slight lag
-      markers: true, // Uncomment to visualize start and end points
+      // markers: true, // Uncomment to visualize start and end points
     },
   });
     // Parallax effect for child2 (slower speed)
