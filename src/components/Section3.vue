@@ -161,6 +161,7 @@ onMounted(() => {
       end: 'bottom-=420 top+=170',
       scrub: 1, // Smooth scrubbing with a slight lag
       // markers: true,
+      
 
     },
   });
