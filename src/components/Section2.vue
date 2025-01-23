@@ -26,7 +26,7 @@
     // border: solid blue ;
     background-color: rgb(0, 0, 0);
     // background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(29, 27, 27) 90.2%);
-    height: 80rem;
+    height: 60rem;
     width: 100%;
     display: flex;
     overflow: hidden;
