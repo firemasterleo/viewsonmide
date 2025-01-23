@@ -40,7 +40,7 @@
 .section3container {
   background-color: rgb(0, 0, 0); /* Solid black background */
   width: 100%;
-  height: 200vh; /* Large enough to allow scrolling */
+  height: 170vh; /* Large enough to allow scrolling */
   position: relative;
 
   .section3 {
@@ -163,8 +163,8 @@ onMounted(() => {
       trigger: ".child1", // The container that triggers the scroll
       start: '40%  top', // When the top of the trigger meets the top of the viewport
       end: 'bottom  top', // When the bottom of the trigger meets the bottom of the viewport
-      scrub: 1, // Smooth scrubbing with a slight lag
-      markers: true, // Uncomment to visualize start and end points
+      scrub: 1.5, // Smooth scrubbing with a slight lag
+      // markers: true, // Uncomment to visualize start and end points
     },
   });
     // Parallax effect for child2 (slower speed)
@@ -174,9 +174,9 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".child1",
       start: 'center top', // When the top of the trigger meets the top of the viewport
-      end: 'bottom top',
-      scrub: 1, // Smooth scrubbing with a slight lag
-      markers: true,
+      end: '110% top',
+      scrub: 1.5, // Smooth scrubbing with a slight lag
+      // markers: true,
       
     },
   });
@@ -187,9 +187,9 @@ onMounted(() => {
     ease: 'none',
     scrollTrigger: {
       trigger: ".child1",
-      start: 'center+=20 top', // When the top of the trigger meets the top of the viewport
-      end: 'bottom+=30 top',
-      scrub: 1, // Smooth scrubbing with a slight lag
+      start: '60% top', // When the top of the trigger meets the top of the viewport
+      end: '97% top',
+      scrub: 1.5, // Smooth scrubbing with a slight lag
       // markers: true,
 
 
