@@ -51,7 +51,7 @@
     overflow: hidden;
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 10;
 
    .section1 {      
         // margin-inline: auto;

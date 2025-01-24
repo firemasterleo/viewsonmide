@@ -22,6 +22,7 @@
 
 <script setup>
 import { ref } from 'vue';
+
 import HeroSection from '../components/HeroSection.vue'; // Adjust path as necessary
 import Section2 from '../components/Section2.vue'; // Adjust path as necessary
 import Section3 from '../components/Section3.vue'; // Adjust path as necessary

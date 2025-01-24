@@ -17,6 +17,9 @@
 <script setup>
 import { useRouter } from 'vue-router';
 
+import LenisScroll from './components/LenisScroll.vue';
+
+
 const router = useRouter();
 
 </script>
