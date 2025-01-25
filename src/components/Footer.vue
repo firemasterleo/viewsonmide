@@ -43,6 +43,36 @@
                 </div>
     
             </div>
+            <div class="bottom-container">
+                <div class="bottom-left">
+                    <p>© 2024 Views On Mide. ALL RIGHTS RESERVED</p>
+                    <ul class="terms-privacy">
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="bottom-container">
+                <div class="bottom-left">
+                    <p>© 2024 Views On Mide. ALL RIGHTS RESERVED</p>
+                    <ul class="terms-privacy">
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="bottom-container">
+                <div class="bottom-left">
+                    <p>© 2024 Views On Mide. ALL RIGHTS RESERVED</p>
+                    <ul class="terms-privacy">
+                        <li>Terms</li>
+                        <li>Privacy</li>
+                    </ul>
+                </div>
+    
+            </div>
 
         </div>
 
@@ -58,17 +88,18 @@
 .footer {
     background-color: #111315;
     width: 100%;
-    height: 140vh;
+    height: 130vh;
     position: relative;
     z-index: -1;
     margin-inline: auto;
-    padding-top: 4rem;
+    // padding-top: 4rem;
     padding-inline: 3.5rem;
-    margin-top: -50vh;
+    margin-top: -38vh;
+    // border: solid blue;
     
     .footer-child {
         // border: solid red;
-        padding-top: 20vh;
+        // padding-top: 20vh;
 
     }
     
@@ -174,14 +205,14 @@ const footer = ref(null);
 onMounted(() => {
 
     gsap.to(footer.value, {
-        y: '100%', // Adjust the percentage for the parallax speed
+        y: '90%', // Adjust the percentage for the parallax speed
       // scale: 1.2, // Adjust the scale value for the zoom level
 
       ease: 'none',
       scrollTrigger: {
         trigger: footer.value,
-        start: 'top center',
-        end: 'bottom top',
+        start: 'top bottom',
+        end: 'bottom+=200 top',
         scrub: 0,
         // markers: true,
 
