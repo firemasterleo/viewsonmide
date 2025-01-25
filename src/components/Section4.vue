@@ -206,7 +206,7 @@ onMounted(() => {
         [worktext3.value],
         { x: '300%' },  // Start from off-screen (bottom)
         {
-          x: '-400%', // Move to normal position (0%)
+          x: '-405%', // Move to normal position (0%)
           ease: 'expo.out',
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
