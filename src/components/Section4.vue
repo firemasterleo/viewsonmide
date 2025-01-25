@@ -2,7 +2,24 @@
     <div class="sectioncontainer">
         <div class="section">
             <div class="work-header">
-                <h1>WORK</h1>
+                <div class="work-text work-text1">
+                    <h1 ref="worktext1">WORK</h1>
+
+                </div>
+                <div class="work-text work-text2">
+                    <h1 ref="worktext2">WORK</h1>
+
+                </div>
+                <div class="work-text work-text3">
+                    <h1 ref="worktext3">WORK</h1>
+
+                </div>
+                <div class="work-text work-text4">
+                    <h1 ref="worktext4">WORK</h1>
+
+                </div>
+
+
             </div>
             <div class="works">
                 <div class="works-child">
@@ -141,6 +158,83 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onBeforeUnmount  } from 'vue';
+
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
+const worktext1 = ref(null);
+const worktext2 = ref(null);
+const worktext3 = ref(null);
+const worktext4 = ref(null);
+onMounted(() => {
+  // Parallax effect for child elements on scroll
+  gsap.fromTo(
+        [worktext1.value],
+        { x: '-300%' },  // Start from off-screen (bottom)
+        {
+          x: '0%', // Move to normal position (0%)
+          ease: 'expo.out',
+          scrollTrigger: {
+            trigger: '.work-text', // The element that triggers the animation
+            start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
+            end: 'bottom 86%',     // End when the bottom of the element reaches the top of the viewport
+            scrub: 1,            // Smooth scrubbing with slight delay
+            markers: true,       // Uncomment for debugging
+          }
+        },
+        
+      );
+  gsap.fromTo(
+        [worktext2.value],
+        { x: '-450%' },  // Start from off-screen (bottom)
+        {
+          x: '-145%', // Move to normal position (0%)
+          ease: 'expo.out',
+          scrollTrigger: {
+            trigger: '.work-text', // The element that triggers the animation
+            start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
+            end: 'bottom 86%',     // End when the bottom of the element reaches the top of the viewport
+            scrub: 1,            // Smooth scrubbing with slight delay
+            markers: true,       // Uncomment for debugging
+          }
+        },
+        
+      );
+  gsap.fromTo(
+        [worktext3.value],
+        { x: '300%' },  // Start from off-screen (bottom)
+        {
+          x: '-390%', // Move to normal position (0%)
+          ease: 'expo.out',
+          scrollTrigger: {
+            trigger: '.work-text', // The element that triggers the animation
+            start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
+            end: 'bottom 86%',     // End when the bottom of the element reaches the top of the viewport
+            scrub: 1,            // Smooth scrubbing with slight delay
+            markers: true,       // Uncomment for debugging
+          }
+        },
+        
+      );
+  gsap.fromTo(
+        [worktext4.value],
+        { x: '550%' },  // Start from off-screen (bottom)
+        {
+          x: '-350%', // Move to normal position (0%)
+          ease: 'expo.out',
+          scrollTrigger: {
+            trigger: '.work-text', // The element that triggers the animation
+            start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
+            end: 'bottom 86%',     // End when the bottom of the element reaches the top of the viewport
+            scrub: 1,            // Smooth scrubbing with slight delay
+            markers: true,       // Uncomment for debugging
+          }
+        },
+        
+      );
+});
 </script>
 
 <style lang="scss" scoped>
@@ -165,6 +259,7 @@
             position: sticky; /* Sticky positioning */
             top: 0;
             color: $bgcolorblack;
+            // display: flex;
 
             h1 {
                 margin: 0;
@@ -246,13 +341,53 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding-inline: 0.5rem;
+
+                .work-text {
+                    overflow: hidden;
+                // flex: 1;
+                // border: solid;
+                // letter-spacing: 1rem;
+            }
+            .work-text1 {
+                width: 146vw;
+                h1 {
+                    // transform: translateX(-106%);
+                }
+            }
+            .work-text2 {
+                width: 103vw;
+                padding-right: 1rem;
 
                 h1 {
-                    margin: 0;
-                    font-size: calc(10vw + 10vh); /* Dynamically adjust font size */
+                    // transform: translateX(-32vw);
+                }
+            }
+            .work-text3 {
+                width:70vw ;
+                padding-right: 1rem;
+                h1 {
+                    // transform: translateX(-58vw);
+                }
+            }
+            .work-text4 {
+                // width:70vw ;
+                // padding-right: 1rem;
+                h1 {
+                    // transform: translateX(-76vw);
+                }
+            }
+
+
+                h1 {
+                    // margin: 0;
+                    font-size: 32vw; /* Dynamically adjust font size */
                     text-align: center;
                     color: #333;
-                    width: 100%;
+                    // width: 100%;
+                    font-weight: 500;
+                    letter-spacing: 0px;
+                    
                 }
             }
 
