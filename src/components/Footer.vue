@@ -88,13 +88,14 @@
 .footer {
     background-color: #111315;
     width: 100%;
-    height: 130vh;
+    height: 90vh;
     position: relative;
     z-index: -1;
     margin-inline: auto;
     // padding-top: 4rem;
     padding-inline: 3.5rem;
     border: solid blue;
+    overflow: hidden;
     
     
     .footer-child {
