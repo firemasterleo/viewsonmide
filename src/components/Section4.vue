@@ -179,7 +179,7 @@ onMounted(() => {
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
+            end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1.2,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
@@ -190,12 +190,12 @@ onMounted(() => {
         [worktext2.value],
         { x: '-450%' },  // Start from off-screen (bottom)
         {
-          x: '-145%', // Move to normal position (0%)
+          x: '-150%', // Move to normal position (0%)
           ease: 'expo.out',
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
+            end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1.2,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
@@ -206,12 +206,12 @@ onMounted(() => {
         [worktext3.value],
         { x: '300%' },  // Start from off-screen (bottom)
         {
-          x: '-390%', // Move to normal position (0%)
+          x: '-400%', // Move to normal position (0%)
           ease: 'expo.out',
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
+            end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1.2,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
@@ -222,12 +222,12 @@ onMounted(() => {
         [worktext4.value],
         { x: '550%' },  // Start from off-screen (bottom)
         {
-          x: '-350%', // Move to normal position (0%)
+          x: '-360%', // Move to normal position (0%)
           ease: 'expo.out',
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
+            end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1.2,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
