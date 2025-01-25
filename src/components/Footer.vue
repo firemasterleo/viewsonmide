@@ -1,6 +1,6 @@
 <template>
     <div class="footer" >
-        <div ref="footer">
+        <div class="footer-child" ref="footer">
             <div class="top-container">
                 <div class="left-container">
                     <div class="logo">
@@ -57,18 +57,21 @@
 .footer {
     background-color: #111315;
     width: 100%;
-    height: 106.5vh;
+    height: 90vh;
     position: relative;
     z-index: -1;
     margin-inline: auto;
     padding-top: 4rem;
     padding-inline: 3.5rem;
-    margin-top: -10rem;
-    border: solid red;
+    // border: solid red;
+    
+ 
 
     .top-container {
         display: flex;
-        height: 16.5rem;
+        // height: 16.5rem;
+    // border: solid red;
+
 
         .left-container {
             width: 50%;
@@ -170,9 +173,9 @@ onMounted(() => {
       ease: 'none',
       scrollTrigger: {
         trigger: footer.value,
-        start: 'top 90%',
-        end: 'bottom 10%',
-        scrub: 0.1,
+        start: 'top 100%',
+        end: 'bottom 0%',
+        scrub: 0,
         // markers: true,
 
       },
