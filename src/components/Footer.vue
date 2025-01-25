@@ -210,13 +210,13 @@ onMounted(() => {
   footer.value,
   { y: '-40%' }, // Starting value
   {
-    y: '40%', // Ending value
+    y: '-40%', // Ending value
     ease: 'none',
     scrollTrigger: {
       trigger: footer.value,
       start: 'top bottom',
       end: 'bottom 10%',
-      scrub: 0,
+      scrub: 0.5,
     //   markers: true,
     },
   }
