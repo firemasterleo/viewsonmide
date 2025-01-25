@@ -94,7 +94,7 @@
     margin-inline: auto;
     // padding-top: 4rem;
     padding-inline: 3.5rem;
-    border: solid blue;
+    // border: solid blue;
     overflow: hidden;
     
     
