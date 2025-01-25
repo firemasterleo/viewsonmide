@@ -10,25 +10,18 @@
                 <nav class="nav-bar">
                     <ul class="nav-links">
                         <div class="nav-item">
-                            <p>Portfolio</p>
+                            <p>About</p>
                         </div>
                         <div class="nav-item">
-                            <p>About</p>
+                            <p>Work</p>
+                        </div>
+                        <div class="nav-item">
+                            <p>Contact</p>
                         </div>
  
                     </ul>
                 </nav>
-                
-
-
-                <div class="download">
-                    <button>Contact</button>
-                </div>
-                <div class="hamburger" :class="{ 'is-active': isActive }" @click="handleClick">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
+            
             </header>
 
 
@@ -39,6 +32,7 @@
 
 <style lang="scss" scoped>
 
+@import '../sass/variables';
 
 
 .presection {
@@ -68,12 +62,12 @@
             // border: solid red;
             // width: 62rem;
             width: 100%;
-            // background-color: #23262276;
-            // backdrop-filter: blur(17px);
+            background-color: #23262276;
+            backdrop-filter: blur(17px);
             height: 4rem;
             // border-radius: 2rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
             top: 0rem;
             display: flex;
             justify-content: space-between;
@@ -97,97 +91,44 @@
             }
             .nav-bar {
                 // border: solid red;
-
-
+                width: 100%;
+                display: flex;
+                justify-content: right;
+                
+                
                 .nav-links {
                     display: flex;
                     gap: 1rem;
-                    width: 30rem;
+                    // width: 30rem;
                     min-width: fit-content;
                     overflow: hidden;
-
-                    .popover {
-                        padding: 1rem;
-                        border: 1px solid #ccc;
-                        background-color: #fff;
-                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                        border-radius: 4px;
-                        width: 150px;
-                        border: solid white;
-                        height:50px;
-                        }
                     .nav-item {
+                        
                         flex-shrink: 0;
                         position: relative;
                         // border : solid black;
                         // padding-inline: 0.2rem;
                         p {
+
                             font-size: 12px;
                             letter-spacing: 1px;
                             font-family: "Poppins", serif;
                             cursor: pointer;
+                            color: $textcolorwhite;
+     
+
 
                         }
                     }
-                    :nth-child(1),:nth-child(2) {
-                        display: flex;
-                        justify-content: center;
-                        // align-items: center;
-                        // border: solid;
-                        padding-right: 0rem;
-
-                        svg {
-                            // border: solid black;
-                            margin-top: 3px;
-                            // position: relative;
-                            fill: white;
-                        }
-                    }
-                }
-                
-            }
-
-            .download {
-                // border: solid black;
-                // padding-left: 1rem;
-                
-                button {
-                
-                    font-family: "Poppins", serif;
-                    font-size: 13px;
-                    font-weight: 600;
-                    height: 3rem;
-                    padding-inline: 1.2rem;
-                    border-radius: 1.5rem;
-                    border: none;
-                    background: linear-gradient(109.5deg, rgb(72, 203, 217) 11.2%, rgb(135, 218, 149) 91.1%);
-                    color: rgb(255, 255, 255);
-                    margin-left: 1rem;
-
-                    cursor: pointer;
-                    
-                }
-                button:hover {
-                background: #fdfffc;
-                color: rgb(0, 0, 0);
 
                 }
-
-
-
-
-
-
-            }
-            .hamburger {
-                // border: solid red;
-                display: none;
+                
             }
 
         }      
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
 .presection {
   .section1 {
@@ -195,77 +136,10 @@
     .header {
     width: 100%;
     // border: solid red;
-    padding-right: 0;
 
     .nav-bar {
-        display: none;
+        // display: none;
     }
-    .download {
-        display: none;
-    }
-    
-   
-
-      .hamburger {
-        -webkit-tap-highlight-color: transparent;
-              
-            //   border: solid red;
-              position: relative;
-              z-index: 25;
-    
-              display: flex;
-              flex-direction: column;
-              gap: 0.25rem;
-              justify-content: center;
-              background-color: none;
-              align-items: center;
-              cursor: pointer;
-    
-              width: 4rem;
-    
-              height: 3rem;
-    
-    
-      
-              .bar {
-                  width: 26px;
-                  height: 4px;
-                  // background-color: rgba(255, 255, 255, 0.413);
-                  background-color: #7e848a;
-
-    
-    
-                  transition: transform 0.3s, opacity 0.3s;
-                  
-                }
-              &.is-active {
-                  
-                  
-                  .bar:nth-child(1) {
-                      // background-color: rgba(255, 255, 255, 0.413);
-    
-                      transform: translateY(6px) rotate(45deg);
-                    }
-                  .bar:nth-child(2) {
-                      // background-color: rgba(255, 255, 255, 0.413);
-    
-                      opacity: 0; }
-                  .bar:nth-child(3) {
-                      // background-color: rgba(255, 255, 255, 0.413);
-    
-                      transform: translateY(-6px) rotate(-45deg);
-                  }
-    
-              }
-      }
-      .signout {
-        // border: solid red;
-          display: none;
-
-        // button {
-        //   // display: none;
-        // }
-      }
 
     }
                   }
