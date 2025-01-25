@@ -208,15 +208,15 @@ onMounted(() => {
 
     gsap.fromTo(
   footer.value,
-  { y: '-100%' }, // Starting value
+  { y: '-40%' }, // Starting value
   {
-    y: '100%', // Ending value
+    y: '40%', // Ending value
     ease: 'none',
     scrollTrigger: {
       trigger: footer.value,
       start: 'top bottom',
       end: 'bottom 10%',
-      scrub: 0.5,
+      scrub: 0,
     //   markers: true,
     },
   }
