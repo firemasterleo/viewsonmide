@@ -2,23 +2,33 @@
     <div class="sectioncontainer">
       <div class="section">
         <div class="work-header">
-
+                <h1>WORK</h1>
         </div>
         <div class="works">
             <div class="works-child">
-                
+                <div class="image">
+                    <img src="../assets/vom-image1.jpeg" loading="lazy" alt="">
+                </div>
             </div>
 
             <div class="works-child">
-                
+                <div class="image">
+                    <img src="../assets/vom-image6.jpeg" loading="lazy" alt="">
+                </div>
             </div>
 
             <div class="works-child">
-                
+                <div class="image">
+                    <img src="../assets/vom-image3.jpeg" loading="lazy" alt="">
+
+                </div>
             </div>
 
             <div class="works-child">
-                
+                                <div class="image">
+                                    <img src="../assets/vom-image4.jpeg" loading="lazy" alt="">
+
+                </div>
             </div>
 
 
@@ -56,9 +66,19 @@ display: flex;
     .work-header {
         height: 100vh;
         background-color: white;
+        // border: solid red;
 
         position: sticky; /* Sticky positioning */
         top: 0;
+        color: $bgcolorblack;
+
+        h1 {
+            margin: 0;
+      font-size: calc(25vw + 10vh); /* Dynamically adjust font size */
+      text-align: center;
+      color: #333;
+      width: 100%;
+        }
     }
     .works {
         height: fit-content;
@@ -71,6 +91,18 @@ display: flex;
             // height: 24rem;
             // border: solid blue;
             background-color: $bgcolorblack;
+
+            .image {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
 
         }
 
@@ -99,13 +131,38 @@ display: flex;
         height: 20rem;
         background-color: $bgcolorwhite;
         position: relative; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        h1 {
+            margin: 0;
+      font-size: calc(10vw + 10vh); /* Dynamically adjust font size */
+      text-align: center;
+      color: #333;
+      width: 100%;
+        }
         
     }
     .works {
         padding-inline: 0.5rem;
         .works-child {
             height: 21rem;
+            width: 100%;
             border: none;
+
+            .image {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
 
 
         }
