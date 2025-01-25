@@ -179,9 +179,9 @@ onMounted(() => {
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 86%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1,            // Smooth scrubbing with slight delay
-            markers: true,       // Uncomment for debugging
+            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
+            scrub: 1.2,            // Smooth scrubbing with slight delay
+            // markers: true,       // Uncomment for debugging
           }
         },
         
@@ -195,9 +195,9 @@ onMounted(() => {
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 86%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1,            // Smooth scrubbing with slight delay
-            markers: true,       // Uncomment for debugging
+            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
+            scrub: 1.2,            // Smooth scrubbing with slight delay
+            // markers: true,       // Uncomment for debugging
           }
         },
         
@@ -211,9 +211,9 @@ onMounted(() => {
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 86%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1,            // Smooth scrubbing with slight delay
-            markers: true,       // Uncomment for debugging
+            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
+            scrub: 1.2,            // Smooth scrubbing with slight delay
+            // markers: true,       // Uncomment for debugging
           }
         },
         
@@ -227,9 +227,9 @@ onMounted(() => {
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 86%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1,            // Smooth scrubbing with slight delay
-            markers: true,       // Uncomment for debugging
+            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
+            scrub: 1.2,            // Smooth scrubbing with slight delay
+            // markers: true,       // Uncomment for debugging
           }
         },
         
