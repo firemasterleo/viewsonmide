@@ -1,9 +1,32 @@
 <template>
     <div class="sectioncontainer">
       <div class="section">
-        <div class="work">
+        <div class="work-header">
 
         </div>
+        <div class="works">
+            <div class="works-child">
+                
+            </div>
+
+            <div class="works-child">
+                
+            </div>
+
+            <div class="works-child">
+                
+            </div>
+
+            <div class="works-child">
+                
+            </div>
+
+
+        </div>
+        <div class="infinite-scroll">
+
+        </div>
+
 
   
       </div>
@@ -18,25 +41,48 @@
 <style lang="scss" scoped>
  @import '../sass/variables';
 .sectioncontainer {
-  background-color: rgb(70, 96, 181); /* Solid black background */
-  width: 100%;
-  height: 100vh; /* Large enough to allow scrolling */
+    background-color: #111315;
+    width: 100%;
+  height: fit-content; /* Large enough to allow scrolling */
 display: flex;
 
 
   .section {
-  background-color: rgb(70, 96, 181); /* Solid black background */
+  background-color: $bgcolorwhite; /* Solid black background */
     width: 80rem;
-    height: 100vh; /* Full viewport height */
+    height: 100%; /* Full viewport height */
     margin-inline: auto;
 
-    .work {
-        height: 15rem;
+    .work-header {
+        height: 100vh;
         background-color: white;
+
         position: sticky; /* Sticky positioning */
         top: 0;
     }
+    .works {
+        height: fit-content;
+        // border: solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
 
+        .works-child {
+            // height: 24rem;
+            // border: solid blue;
+            background-color: $bgcolorblack;
+
+        }
+
+    }
+    .infinite-scroll {
+        height: 7rem;
+
+        // border: solid blue;
+        border-radius: 0 0 2rem 2rem;
+        background-color: $bgcolorwhite;
+    
+    }
   }
 }
 
@@ -46,12 +92,23 @@ display: flex;
   .sectioncontainer {
     .section {
       width: 100vw;
-      height: 100vh;
+      border-radius: 0 0 1rem 1rem;
 
-      .work {
-        height: 15rem;
+
+      .work-header {
+        height: 20rem;
         background-color: $bgcolorwhite;
         position: relative; 
+        
+    }
+    .works {
+        padding-inline: 0.5rem;
+        .works-child {
+            height: 21rem;
+            border: none;
+
+
+        }
     }
     }
   }
