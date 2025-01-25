@@ -175,9 +175,9 @@ onMounted(() => {
       scrollTrigger: {
         trigger: footer.value,
         start: 'top bottom',
-        end: '-100% top',
+        end: '250% center',
         scrub: 0.3,
-        // markers: true,
+        markers: true,
 
       },
     });
