@@ -64,6 +64,7 @@
     padding-top: 4rem;
     padding-inline: 3.5rem;
     margin-top: -10rem;
+    border: solid red;
 
     .top-container {
         display: flex;
@@ -163,7 +164,7 @@ const footer = ref(null);
 onMounted(() => {
 
     gsap.to(footer.value, {
-      y: '80%', // Adjust the percentage for the parallax speed
+      y: '200%', // Adjust the percentage for the parallax speed
       // scale: 1.2, // Adjust the scale value for the zoom level
 
       ease: 'none',
@@ -171,7 +172,7 @@ onMounted(() => {
         trigger: footer.value,
         start: 'top 90%',
         end: 'bottom 10%',
-        scrub: 0.3,
+        scrub: 0.1,
         // markers: true,
 
       },
