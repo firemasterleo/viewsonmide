@@ -167,7 +167,7 @@ const footer = ref(null);
 onMounted(() => {
 
     gsap.to(footer.value, {
-      y: '200%', // Adjust the percentage for the parallax speed
+      y: '100%', // Adjust the percentage for the parallax speed
       // scale: 1.2, // Adjust the scale value for the zoom level
 
       ease: 'none',
@@ -175,7 +175,7 @@ onMounted(() => {
         trigger: footer.value,
         start: 'top 100%',
         end: 'bottom 0%',
-        scrub: 0,
+        scrub: 1,
         // markers: true,
 
       },
