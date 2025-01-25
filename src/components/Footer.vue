@@ -99,7 +99,7 @@
     
     
     .footer-child {
-        // margin-top: -20rem;
+        // margin-top: 20rem;
         // border: solid red;
         // padding-top: 20vh;
 
@@ -208,9 +208,9 @@ onMounted(() => {
 
     gsap.fromTo(
   footer.value,
-  { y: '-60%' }, // Starting value
+  { y: '-40%' }, // Starting value
   {
-    y: '0%', // Ending value
+    y: '40%', // Ending value
     ease: 'none',
     scrollTrigger: {
       trigger: footer.value,
