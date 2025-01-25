@@ -216,7 +216,7 @@ onMounted(() => {
       trigger: footer.value,
       start: 'top bottom',
       end: 'bottom 10%',
-      scrub: 0.1,
+      scrub: 0.5,
     //   markers: true,
     },
   }
