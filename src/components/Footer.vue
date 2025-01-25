@@ -57,13 +57,14 @@
 .footer {
     background-color: #111315;
     width: 100%;
-    height: 90vh;
+    height: 125vh;
     position: relative;
     z-index: -1;
     margin-inline: auto;
     padding-top: 4rem;
     padding-inline: 3.5rem;
     // border: solid red;
+    margin-top: -20rem;
     
  
 
@@ -167,16 +168,18 @@ const footer = ref(null);
 onMounted(() => {
 
     gsap.to(footer.value, {
-  y: '300%', // Slower movement, adjust the percentage as needed
-  ease: 'none', // No easing for smooth linear motion
-  scrollTrigger: {
-    trigger: footer.value,
-    start: 'top bottom', // When the footer enters the viewport
-    end: 'bottom top', // Until the footer exits the viewport
-    scrub: true, // Syncs the animation with scroll position
-    // markers: true, // Uncomment for debugging
-  },
-});
+        y: '99%', // Adjust the percentage for the parallax speed
+      // scale: 1.2, // Adjust the scale value for the zoom level
 
+      ease: 'none',
+      scrollTrigger: {
+        trigger: footer.value,
+        start: 'top bottom',
+        end: '-100% top',
+        scrub: 0.3,
+        // markers: true,
+
+      },
+    });
 });
 </script>
