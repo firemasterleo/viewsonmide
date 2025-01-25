@@ -49,6 +49,7 @@
 
 
 
+
     </div>
 
 </template>
@@ -57,14 +58,19 @@
 .footer {
     background-color: #111315;
     width: 100%;
-    height: 125vh;
+    height: 140vh;
     position: relative;
     z-index: -1;
     margin-inline: auto;
     padding-top: 4rem;
     padding-inline: 3.5rem;
-    // border: solid red;
-    margin-top: -20rem;
+    margin-top: -50vh;
+    
+    .footer-child {
+        border: solid red;
+        padding-top: 20vh;
+
+    }
     
  
 
@@ -168,15 +174,15 @@ const footer = ref(null);
 onMounted(() => {
 
     gsap.to(footer.value, {
-        y: '99%', // Adjust the percentage for the parallax speed
+        y: '100%', // Adjust the percentage for the parallax speed
       // scale: 1.2, // Adjust the scale value for the zoom level
 
       ease: 'none',
       scrollTrigger: {
         trigger: footer.value,
-        start: 'top bottom',
-        end: '250% center',
-        scrub: 0.3,
+        start: 'top center',
+        end: 'bottom top',
+        scrub: 0,
         markers: true,
 
       },
