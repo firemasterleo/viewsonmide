@@ -67,7 +67,7 @@
     margin-top: -50vh;
     
     .footer-child {
-        border: solid red;
+        // border: solid red;
         padding-top: 20vh;
 
     }
@@ -183,7 +183,7 @@ onMounted(() => {
         start: 'top center',
         end: 'bottom top',
         scrub: 0,
-        markers: true,
+        // markers: true,
 
       },
     });
