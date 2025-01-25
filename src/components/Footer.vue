@@ -94,11 +94,12 @@
     margin-inline: auto;
     // padding-top: 4rem;
     padding-inline: 3.5rem;
-    margin-top: -38vh;
-    // border: solid blue;
+    border: solid blue;
+    
     
     .footer-child {
-        // border: solid red;
+        margin-top: -38vh;
+        border: solid red;
         // padding-top: 20vh;
 
     }
@@ -212,9 +213,9 @@ onMounted(() => {
       scrollTrigger: {
         trigger: footer.value,
         start: 'top bottom',
-        end: 'bottom top',
+        end: 'bottom 70',
         scrub: 0,
-        // markers: true,
+        markers: true,
 
       },
     });
