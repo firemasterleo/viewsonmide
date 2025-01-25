@@ -167,19 +167,16 @@ const footer = ref(null);
 onMounted(() => {
 
     gsap.to(footer.value, {
-      y: '100%', // Adjust the percentage for the parallax speed
-      // scale: 1.2, // Adjust the scale value for the zoom level
-
-      ease: 'none',
-      scrollTrigger: {
-        trigger: footer.value,
-        start: 'top 100%',
-        end: 'bottom 0%',
-        scrub: 1,
-        // markers: true,
-
-      },
-    });
+  y: '300%', // Slower movement, adjust the percentage as needed
+  ease: 'none', // No easing for smooth linear motion
+  scrollTrigger: {
+    trigger: footer.value,
+    start: 'top bottom', // When the footer enters the viewport
+    end: 'bottom top', // Until the footer exits the viewport
+    scrub: true, // Syncs the animation with scroll position
+    // markers: true, // Uncomment for debugging
+  },
+});
 
 });
 </script>
