@@ -3,6 +3,7 @@
         <HeroSection />
         <Section2 />
         <Section3 />
+        <Section4 />
       </div>
 
 </template>
@@ -26,6 +27,7 @@ import { ref } from 'vue';
 import HeroSection from '../components/HeroSection.vue'; // Adjust path as necessary
 import Section2 from '../components/Section2.vue'; // Adjust path as necessary
 import Section3 from '../components/Section3.vue'; // Adjust path as necessary
+import Section4 from '../components/Section4.vue'; // Adjust path as necessary
 
 // const buttons = Array(6).fill(null);
 // const tiles = Array(6).fill(null);

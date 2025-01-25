@@ -9,7 +9,7 @@
               <div class="p-text" ref="story2">
               <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='10' height='10'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
   
-                <p >Each photograph is a chapter, capturing emotions, and memories that come together to tell a story you'll cherish forever.</p>
+                <p >Each photograph becomes a chapter, capturing heartfelt emotions and cherished memories that come together to tell a story you'll treasure forever.</p>
   
               </div>
 
@@ -24,7 +24,7 @@
               <div class="p-text" ref="vision2">
               <svg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 24 24' fill='#000000' width='10' height='10'><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path></svg>
   
-                <p>Every frame is a canvas where imagination meets vision, turning fleeting moments into breathtaking visual masterpieces.</p>
+                <p>Every single frame becomes a canvas where boundless imagination meets artistic vision, transforming fleeting moments into awe-inspiring visual masterpieces.</p>
   
               </div>
             </div>
@@ -74,7 +74,6 @@
     position: sticky; /* Sticky positioning */
     top: 0;
     z-index: 0; /* Sticks to the top of the viewport */
-    background: radial-gradient(ellipse 25% 30% at 55% 30%, #5b6457, #000000); /* Fancy background */
     width: 80rem;
     height: 100vh; /* Full viewport height */
     margin-inline: auto;
@@ -223,6 +222,10 @@
   
           width: 100%;
           height: fit-content;
+          font-size: 14px;
+          line-height: 20px;
+          padding-top: 0;
+
   
   
           svg {
