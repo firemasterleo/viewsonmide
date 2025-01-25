@@ -99,7 +99,7 @@
     
     
     .footer-child {
-        margin-top: -38vh;
+        margin-top: -20rem;
         border: solid red;
         // padding-top: 20vh;
 
