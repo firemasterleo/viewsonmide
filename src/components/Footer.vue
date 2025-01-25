@@ -99,7 +99,7 @@
     
     
     .footer-child {
-        margin-top: -20rem;
+        // margin-top: -20rem;
         border: solid red;
         // padding-top: 20vh;
 
@@ -206,19 +206,20 @@ gsap.registerPlugin(ScrollTrigger);
 const footer = ref(null);
 onMounted(() => {
 
-    gsap.to(footer.value, {
-        y: '90%', // Adjust the percentage for the parallax speed
-      // scale: 1.2, // Adjust the scale value for the zoom level
-
-      ease: 'none',
-      scrollTrigger: {
-        trigger: footer.value,
-        start: 'top bottom',
-        end: 'bottom 70',
-        scrub: 0,
-        markers: true,
-
-      },
-    });
+    gsap.fromTo(
+  footer.value,
+  { y: '-100%' }, // Starting value
+  {
+    y: '0%', // Ending value
+    ease: 'none',
+    scrollTrigger: {
+      trigger: footer.value,
+      start: 'top bottom',
+      end: 'bottom 10%',
+      scrub: 0,
+      markers: true,
+    },
+  }
+);
 });
 </script>
