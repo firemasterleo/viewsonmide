@@ -100,7 +100,7 @@
     
     .footer-child {
         // margin-top: -20rem;
-        border: solid red;
+        // border: solid red;
         // padding-top: 20vh;
 
     }
@@ -217,7 +217,7 @@ onMounted(() => {
       start: 'top bottom',
       end: 'bottom 10%',
       scrub: 0,
-      markers: true,
+    //   markers: true,
     },
   }
 );
