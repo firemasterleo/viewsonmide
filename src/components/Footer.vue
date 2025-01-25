@@ -208,7 +208,7 @@ onMounted(() => {
 
     gsap.fromTo(
   footer.value,
-  { y: '-100%' }, // Starting value
+  { y: '-60%' }, // Starting value
   {
     y: '0%', // Ending value
     ease: 'none',
