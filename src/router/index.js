@@ -20,15 +20,15 @@ const router = createRouter({
         },
         
     ],
-  scrollBehavior(to, from, savedPosition) {
-    // Return the desired position when navigating back and forward
-    if (savedPosition) {
-      return savedPosition;
-    } else {
-      // Scroll to the top by default
-      return { left: 0, top: 0 };
-    }
-  },
+    scrollBehavior(to, from, savedPosition) {
+      if (savedPosition) {
+        // When coming back from another route, restore the scroll position
+        return savedPosition;
+      } else {
+        // Otherwise, scroll to top (or another position as needed)
+        return { x: 0, y: 0 };
+      }
+    },
   
 });
 
