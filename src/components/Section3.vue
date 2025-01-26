@@ -50,7 +50,7 @@
       </div>
       <div class="video-container">
         <video autoplay muted loop playsinline>
-          <source src="https://res.cloudinary.com/dgdnews6i/video/upload/v1737873380/vom-video2_wb00zr.mp4" type="video/mp4">
+          <source src="../assets/vom-video3.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
