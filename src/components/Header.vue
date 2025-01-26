@@ -3,14 +3,20 @@
         <div class="section1">
 
             <header class="header">
+                <router-link to="/">
                 <div class="logo">
-                    <h1>VOM</h1>
-
-                </div>
+                        <h1>VOM</h1>
+                        
+                        
+                    </div>
+                </router-link>
                 <nav class="nav-bar">
                     <ul class="nav-links">
                         <div class="nav-item">
-                            <p>About</p>
+                            <router-link to="/About">
+                                <p>About</p>
+                </router-link>
+
                         </div>
                         <div class="nav-item">
                             <p>Work</p>
