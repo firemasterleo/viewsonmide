@@ -14,7 +14,7 @@ lenis.on('scroll', ScrollTrigger.update);
 
 gsap.ticker.add((time) => {
     // console.log('Ticker is running!');
-  lenis.raf(time * 1000);
+  lenis.raf(time * 1300);
 });
 
 </script>

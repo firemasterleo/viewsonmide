@@ -175,12 +175,12 @@ onMounted(() => {
         { x: '-300%' },  // Start from off-screen (bottom)
         {
           x: '0%', // Move to normal position (0%)
-          ease: 'expo.out',
+          ease: "cubic-bezier(0.25, 1, 0.5, 1)",
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1.2,            // Smooth scrubbing with slight delay
+            scrub: 1.7,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
         },
@@ -191,12 +191,12 @@ onMounted(() => {
         { x: '-450%' },  // Start from off-screen (bottom)
         {
           x: '-150%', // Move to normal position (0%)
-          ease: 'expo.out',
+          ease: "cubic-bezier(0.25, 1, 0.5, 1)",
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1.2,            // Smooth scrubbing with slight delay
+            scrub: 1.7,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
         },
@@ -204,15 +204,15 @@ onMounted(() => {
       );
   gsap.fromTo(
         [worktext3.value],
-        { x: '300%' },  // Start from off-screen (bottom)
+        { x: '120%' },  // Start from off-screen (bottom)
         {
           x: '-405%', // Move to normal position (0%)
-          ease: 'expo.out',
+          ease: "cubic-bezier(0.25, 1, 0.5, 1)",
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1.2,            // Smooth scrubbing with slight delay
+            scrub: 1.7,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
         },
@@ -220,15 +220,15 @@ onMounted(() => {
       );
   gsap.fromTo(
         [worktext4.value],
-        { x: '550%' },  // Start from off-screen (bottom)
+        { x: '130%' },  // Start from off-screen (bottom)
         {
           x: '-360%', // Move to normal position (0%)
-          ease: 'expo.out',
+          ease: "cubic-bezier(0.25, 1, 0.5, 1)",
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1.2,            // Smooth scrubbing with slight delay
+            scrub: 1.7,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
         },
@@ -359,6 +359,7 @@ onMounted(() => {
                 width: 103vw;
                 padding-right: 1rem;
 
+
                 h1 {
                     // transform: translateX(-32vw);
                 }
@@ -366,6 +367,7 @@ onMounted(() => {
             .work-text3 {
                 width:70vw ;
                 padding-right: 1rem;
+                border: solid 1;
                 h1 {
                     // transform: translateX(-58vw);
                 }
@@ -376,7 +378,7 @@ onMounted(() => {
                 h1 {
                     // transform: translateX(-76vw);
                 }
-            }
+            } 
 
 
                 h1 {
