@@ -1,6 +1,6 @@
 <template>
   <div class="section3container" >
-    <div class="section3" ref="section">
+    <div class="section3">
       <div class="text-container">
         <div class="child">
           <div class="inner-child child1" ref="child1">
@@ -64,10 +64,11 @@
 .section3container {
   background-color: rgb(0, 0, 0); /* Solid black background */
   width: 100vw;
-  height: 150vh; /* Large enough to allow scrolling */
+  height: 160vh; /* Large enough to allow scrolling */
   position: relative;
   z-index: 11;
   display: flex;
+  // border: solid red;
 
 
 
@@ -320,10 +321,6 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-  
-
-const section3 = ref(null);
-
 const child1 = ref(null);
 const child2 = ref(null);
 const child3 = ref(null);
@@ -385,24 +382,7 @@ onMounted(() => {
 
     },
   });
-  gsap.to(section3.value, {
-    ease: "cubic-bezier(0.25, 1, 0.5, 1)",
-    scrollTrigger: {
-      trigger: ".section3container",
-      start: 'top top', // When the top of the trigger meets the top of the viewport
-      end: 'bottom 40%',
-      // duration: 2,
-      pin: true,
-
-      
-
-      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
-       // Smooth scrubbing with a slight lag
-      // markers: true,
-
-
-    },
-  });
+ 
 
   mm.add("(min-width: 800px)", () => {
 
