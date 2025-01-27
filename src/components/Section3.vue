@@ -311,7 +311,7 @@
 
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount  } from 'vue';
+import { ref, onMounted, onBeforeUnmount,onUnmounted  } from 'vue';
 
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -435,6 +435,19 @@ onMounted(() => {
         }
       );
   });
+
+  // Debounce resize event for ScrollTrigger refresh
+  let resizeTimeout;
+  const handleResize = () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 200);
+  };
+
+  // Add resize event listener
+  window.addEventListener("resize", handleResize);
+
 });
 
 onBeforeUnmount(() => {
@@ -448,11 +461,8 @@ onBeforeUnmount(() => {
   gsap.globalTimeline.clear();
 });
 
-let resizeTimeout;
-window.addEventListener("resize", () => {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 200);
-});
+onUnmounted(() => {
+    window.removeEventListener("resize", handleResize);
+  });
+
 </script>
