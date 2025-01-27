@@ -1,6 +1,6 @@
 <template>
   <div class="section3container" >
-    <div class="section3" ref="section3">
+    <div class="section3" ref="section">
       <div class="text-container">
         <div class="child">
           <div class="inner-child child1" ref="child1">
@@ -64,7 +64,7 @@
 .section3container {
   background-color: rgb(0, 0, 0); /* Solid black background */
   width: 100vw;
-  height: 100vh; /* Large enough to allow scrolling */
+  height: 150vh; /* Large enough to allow scrolling */
   position: relative;
   z-index: 11;
   display: flex;
@@ -72,6 +72,8 @@
 
 
   .section3 {
+    position: sticky;
+    top: 0;
     width: 80rem;
     height: 100vh; /* Full viewport height */
     margin-inline: auto;
@@ -337,6 +339,7 @@ let mm = gsap.matchMedia();
 
 
 onMounted(() => {
+
   // Parallax effect for child elements on scroll
   gsap.to([child1.value], {
     y: '-105%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
