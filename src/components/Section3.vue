@@ -448,7 +448,11 @@ onBeforeUnmount(() => {
   gsap.globalTimeline.clear();
 });
 
+let resizeTimeout;
 window.addEventListener("resize", () => {
-  ScrollTrigger.refresh();
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 200);
 });
 </script>
