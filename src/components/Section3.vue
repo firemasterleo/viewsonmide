@@ -184,7 +184,7 @@
 @media (max-width: 800px) {
   .section3container {
     width: 100%;
-    border: solid;
+    // border: solid;
     // overflow-x: hidden;
     .section3 {
       // width: 100vw;
@@ -336,36 +336,7 @@ const quality2 = ref(null);
 let mm = gsap.matchMedia();
 
 
-
-let resizeTimeout;
-let lastWidth = window.innerWidth;
-let lastHeight = window.innerHeight;
-
-// Resize handler with throttling and conditional refresh
-const handleResize = () => {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(() => {
-    const currentWidth = window.innerWidth;
-    const currentHeight = window.innerHeight;
-
-    // Only refresh if dimensions have changed significantly
-    if (
-      Math.abs(currentWidth - lastWidth) > 50 || // Adjust sensitivity
-      Math.abs(currentHeight - lastHeight) > 50
-    ) {
-      lastWidth = currentWidth;
-      lastHeight = currentHeight;
-      ScrollTrigger.refresh(); // Refresh only when necessary
-    }
-  }, 200); // Throttle delay
-};
-onUnmounted(() => {
-  // Remove resize event listener
-  window.removeEventListener("resize", handleResize);
-});
 onMounted(() => {
-  window.addEventListener("resize", handleResize);
-
   // Parallax effect for child elements on scroll
   gsap.to([child1.value], {
     y: '-105%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
