@@ -344,7 +344,7 @@ onMounted(() => {
       scrub: 0.5, // Smooth scrubbing with a slight lag
       invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
 
-      markers: true, // Uncomment to visualize start and end points
+      // markers: true, // Uncomment to visualize start and end points
     },
   });
     // Parallax effect for child2 (slower speed)
