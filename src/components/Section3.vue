@@ -341,7 +341,7 @@ const handleResize = () => {
   resizeTimeout = setTimeout(() => {
     // Force a refresh of ScrollTrigger calculations
     ScrollTrigger.refresh();
-  }, 200); // Adjust debounce time as needed
+  }, 1500); // Adjust debounce time as needed
 };
 
 
