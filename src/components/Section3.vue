@@ -334,9 +334,20 @@ const quality = ref(null);
 const quality2 = ref(null);
 
 let mm = gsap.matchMedia();
+// Debounced resize handler
+let resizeTimeout;
+const handleResize = () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    // Force a refresh of ScrollTrigger calculations
+    ScrollTrigger.refresh();
+  }, 200); // Adjust debounce time as needed
+};
 
 
 onMounted(() => {
+  window.addEventListener("resize", handleResize);
+
   // Parallax effect for child elements on scroll
   gsap.to([child1.value], {
     y: '-105%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
@@ -456,6 +467,11 @@ onMounted(() => {
   });
 
 
+});
+
+onUnmounted(() => {
+  // Remove event listener on unmount
+  window.removeEventListener("resize", handleResize);
 });
 
 onBeforeUnmount(() => {
