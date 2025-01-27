@@ -435,19 +435,6 @@ onMounted(() => {
         }
       );
   });
-
-  // Debounce resize event for ScrollTrigger refresh
-  let resizeTimeout;
-  const handleResize = () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 200);
-  };
-
-  // Add resize event listener
-  window.addEventListener("resize", handleResize);
-
 });
 
 onBeforeUnmount(() => {
@@ -461,8 +448,5 @@ onBeforeUnmount(() => {
   gsap.globalTimeline.clear();
 });
 
-onUnmounted(() => {
-    window.removeEventListener("resize", handleResize);
-  });
 
 </script>
