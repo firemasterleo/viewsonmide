@@ -447,4 +447,8 @@ onBeforeUnmount(() => {
   // Optionally, clear the global GSAP timeline if necessary
   gsap.globalTimeline.clear();
 });
+
+window.addEventListener("resize", () => {
+  ScrollTrigger.refresh();
+});
 </script>
