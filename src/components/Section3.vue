@@ -334,16 +334,6 @@ const quality = ref(null);
 const quality2 = ref(null);
 
 let mm = gsap.matchMedia();
-// Debounced resize handler
-let resizeTimeout;
-const handleResize = () => {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(() => {
-    // Force a refresh of ScrollTrigger calculations
-    ScrollTrigger.refresh();
-  }, 1500); // Adjust debounce time as needed
-};
-
 
 onMounted(() => {
   window.addEventListener("resize", handleResize);
@@ -469,10 +459,7 @@ onMounted(() => {
 
 });
 
-onUnmounted(() => {
-  // Remove event listener on unmount
-  window.removeEventListener("resize", handleResize);
-});
+
 
 onBeforeUnmount(() => {
   // Kill all ScrollTrigger instances
