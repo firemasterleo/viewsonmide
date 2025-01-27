@@ -435,6 +435,10 @@ onMounted(() => {
         }
       );
   });
+
+  window.addEventListener("orientationchange", () => {
+  ScrollTrigger.refresh();
+});
 });
 
 onBeforeUnmount(() => {
