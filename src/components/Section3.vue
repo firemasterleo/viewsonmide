@@ -336,7 +336,6 @@ const quality2 = ref(null);
 let mm = gsap.matchMedia();
 
 onMounted(() => {
-  window.addEventListener("resize", handleResize);
 
   // Parallax effect for child elements on scroll
   gsap.to([child1.value], {
