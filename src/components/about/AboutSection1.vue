@@ -22,7 +22,7 @@ display: flex;
 
 
   .section {
-  background-color: rgb(208, 193, 134); /* Solid black background */
+  background-color: rgb(70, 96, 181); /* Solid black background */
     width: 80rem;
     height: 100vh; /* Full viewport height */
     margin-inline: auto;

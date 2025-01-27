@@ -9,13 +9,12 @@
         <router-view/>
       </div>
   
-      <div class="footer">
+      <!-- <div class="footer">
       <Footer/>
-    </div>
+    </div> -->
   </template>
   
-  <style lang="scss">
-  @use '../sass/main.scss';
+  <style lang="scss" scoped>
 
   
 

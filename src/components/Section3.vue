@@ -177,11 +177,11 @@
   }
 }
 
-.text {
-  /* Uncomment if needed */
-  // position: sticky;
-  // top: 0;
-}
+// .text {
+//   /* Uncomment if needed */
+//   position: sticky;
+//   top: 0;
+// }
 
 @media (max-width: 800px) {
   .section3container {
@@ -342,6 +342,8 @@ onMounted(() => {
       start: '40%  top', // When the top of the trigger meets the top of the viewport
       end: 'bottom  top', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 0.5, // Smooth scrubbing with a slight lag
+      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+
       // markers: true, // Uncomment to visualize start and end points
     },
   });
@@ -354,6 +356,8 @@ onMounted(() => {
       start: 'center top', // When the top of the trigger meets the top of the viewport
       end: '125% top',
       scrub: 0.5, // Smooth scrubbing with a slight lag
+      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+
       // markers: true,
       
     },
@@ -367,7 +371,9 @@ onMounted(() => {
       trigger: ".child1",
       start: '60% top', // When the top of the trigger meets the top of the viewport
       end: '120% top',
-      scrub: 0.5, // Smooth scrubbing with a slight lag
+      scrub: 0.5,
+      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+       // Smooth scrubbing with a slight lag
       // markers: true,
 
 
@@ -386,7 +392,9 @@ onMounted(() => {
             trigger: '.infant1', // The element that triggers the animation
             start: 'top 89%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 92%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1,            // Smooth scrubbing with slight delay
+            scrub: 1,  
+      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+      // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
         },
@@ -402,7 +410,9 @@ onMounted(() => {
             trigger: '.infant2', // The element that triggers the animation
             start: 'top 89%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 97%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1,            // Smooth scrubbing with slight delay
+            scrub: 1, 
+      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+      // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
         }
@@ -417,7 +427,9 @@ onMounted(() => {
             trigger: '.infant3', // The element that triggers the animation
             start: 'top 89%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 100%',     // End when the bottom of the element reaches the top of the viewport
-            scrub: 1,            // Smooth scrubbing with slight delay
+            scrub: 1, 
+      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+      // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
         }

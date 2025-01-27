@@ -1,6 +1,6 @@
 <template>
-    <div class="footer" >
-        <div class="footer-child" ref="footer">
+    <div class="footer-container"  >
+        <div class="footer" ref="footer" >
             <div class="top-container">
                 <div class="left-container">
                     <div class="logo">
@@ -85,23 +85,23 @@
 </template>
 
 <style lang="scss" scoped>
-.footer {
+.footer-container {
     background-color: #111315;
     width: 100%;
     height: 90vh;
-    position: relative;
-    z-index: -1;
+
     margin-inline: auto;
     // padding-top: 4rem;
-    padding-inline: 3.5rem;
+    padding-inline: 0.5rem;
     // border: solid blue;
     overflow: hidden;
     
     
-    .footer-child {
+    .footer {
         // margin-top: 20rem;
         // border: solid red;
         // padding-top: 20vh;
+
 
     }
     
@@ -189,7 +189,7 @@
     }
 }
 .footerbottom {
-    border: solid red;
+    // border: solid red;
 }
 </style>
 
@@ -218,6 +218,8 @@ onMounted(() => {
       end: 'bottom 10%',
       scrub: 0.3,
     //   markers: true,
+      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+
     },
   }
 );
