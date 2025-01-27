@@ -15,7 +15,7 @@
  .body {
     background-color: black;
     // border: solid red;
-    width: 100%;
+    width: 100vw;
     height: fit-content;
     // overflow-x: hidden ;
 
