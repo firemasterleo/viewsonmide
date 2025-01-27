@@ -412,14 +412,16 @@ onMounted(() => {
     },
   });
   gsap.to(section3.value, {
-    y: '0', // Moves child3 up by 150%
-    ease: 'none',
+    ease: "cubic-bezier(0.25, 1, 0.5, 1)",
     scrollTrigger: {
       trigger: ".section3container",
       start: 'top top', // When the top of the trigger meets the top of the viewport
       end: 'bottom 40%',
-      scrub: 0.5,
+      // duration: 2,
       pin: true,
+
+      
+
       invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
        // Smooth scrubbing with a slight lag
       // markers: true,
