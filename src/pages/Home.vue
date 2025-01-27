@@ -17,7 +17,7 @@
     // border: solid red;
     width: 100vw;
     height: fit-content;
-    // overflow-x: hidden ;
+    // overflow-x: scroll ;
 
     // margin-inline: auto;
 }

@@ -15,6 +15,7 @@
   </template>
   
   <style lang="scss" scoped>
+@use '/src/sass/main.scss';
 
   
 

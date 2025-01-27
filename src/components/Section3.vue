@@ -1,6 +1,6 @@
 <template>
-  <div class="section3container">
-    <div class="section3">
+  <div class="section3container" >
+    <div class="section3" ref="section3">
       <div class="text-container">
         <div class="child">
           <div class="inner-child child1" ref="child1">
@@ -63,17 +63,15 @@
  @import '../sass/variables';
 .section3container {
   background-color: rgb(0, 0, 0); /* Solid black background */
-  width: 100%;
-  height: 150vh; /* Large enough to allow scrolling */
+  width: 100vw;
+  height: 100vh; /* Large enough to allow scrolling */
   position: relative;
   z-index: 11;
   display: flex;
 
 
+
   .section3 {
-    position: sticky; /* Sticky positioning */
-    top: 0;
-    z-index: 0; /* Sticks to the top of the viewport */
     width: 80rem;
     height: 100vh; /* Full viewport height */
     margin-inline: auto;
@@ -185,8 +183,11 @@
 
 @media (max-width: 800px) {
   .section3container {
+    width: 100%;
+    border: solid;
+    // overflow-x: hidden;
     .section3 {
-      width: 100vw;
+      // width: 100vw;
       height: 100vh;
 
       .video-container {
@@ -319,6 +320,8 @@ gsap.registerPlugin(ScrollTrigger);
 
   
 
+const section3 = ref(null);
+
 const child1 = ref(null);
 const child2 = ref(null);
 const child3 = ref(null);
@@ -339,7 +342,7 @@ onMounted(() => {
     y: '-105%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
     scrollTrigger: {
       trigger: ".child1", // The container that triggers the scroll
-      start: '40%  top', // When the top of the trigger meets the top of the viewport
+      start: 'top+=120  top', // When the top of the trigger meets the top of the viewport
       end: 'bottom  top', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 0.5, // Smooth scrubbing with a slight lag
       invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
@@ -379,6 +382,22 @@ onMounted(() => {
 
     },
   });
+  gsap.to(section3.value, {
+    y: '0', // Moves child3 up by 150%
+    ease: 'none',
+    scrollTrigger: {
+      trigger: ".section3container",
+      start: 'top top', // When the top of the trigger meets the top of the viewport
+      end: 'bottom 40%',
+      scrub: 0.5,
+      pin: true,
+      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+       // Smooth scrubbing with a slight lag
+      // markers: true,
+
+
+    },
+  });
 
   mm.add("(min-width: 800px)", () => {
 
@@ -393,7 +412,7 @@ onMounted(() => {
             start: 'top 89%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 92%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1,  
-      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+      // invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
       // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
@@ -411,7 +430,7 @@ onMounted(() => {
             start: 'top 89%',   // Start when the top of the element hits the bottom of the viewport
             end: 'bottom 97%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1, 
-      invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
+      // invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
       // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
