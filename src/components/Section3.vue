@@ -342,7 +342,7 @@ onMounted(() => {
     y: '-105%', // Moves the element up by 120% of its height    ease: 'none', // Use 'none' for linear movement
     scrollTrigger: {
       trigger: ".child1", // The container that triggers the scroll
-      start: 'top+=120  top', // When the top of the trigger meets the top of the viewport
+      start: 'top+=40%  top', // When the top of the trigger meets the top of the viewport
       end: 'bottom  top', // When the bottom of the trigger meets the bottom of the viewport
       scrub: 0.5, // Smooth scrubbing with a slight lag
       invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
@@ -355,9 +355,9 @@ onMounted(() => {
     y: '-105%', // Moves child2 up by 80%
     // ease: 'none',
     scrollTrigger: {
-      trigger: ".child1",
-      start: 'center top', // When the top of the trigger meets the top of the viewport
-      end: '125% top',
+      trigger: ".child2",
+      start: 'top-=52% top', // When the top of the trigger meets the top of the viewport
+      end: 'top+=17% top',
       scrub: 0.5, // Smooth scrubbing with a slight lag
       invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
 
@@ -371,9 +371,9 @@ onMounted(() => {
     y: '-105%', // Moves child3 up by 150%
     ease: 'none',
     scrollTrigger: {
-      trigger: ".child1",
-      start: '60% top', // When the top of the trigger meets the top of the viewport
-      end: '120% top',
+      trigger: ".child3",
+      start: 'top-=145% top', // When the top of the trigger meets the top of the viewport
+      end: 'top-=80% top',
       scrub: 0.5,
       invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
        // Smooth scrubbing with a slight lag
