@@ -139,24 +139,25 @@
   <div class="sectioncontainer">
       <div class="section">
           <div class="work-header">
-              <div class="work-text work-text1">
-                  <h1 ref="worktext1">WORK</h1>
+            <div class="work-text-container">
 
+              <div class="work-text work-text1">
+                <h1 ref="worktext1">WORK</h1>
+                
               </div>
               <div class="work-text work-text2">
-                  <h1 ref="worktext2">WORK</h1>
+                <h1 ref="worktext2">WORK</h1>
 
               </div>
               <div class="work-text work-text3">
                   <h1 ref="worktext3">WORK</h1>
-
-              </div>
-              <div class="work-text work-text4">
+                </div>
+                
+                <div class="work-text work-text4">
                   <h1 ref="worktext4">WORK</h1>
-
+                  
+                </div>
               </div>
-
-
           </div>
           <div class="works">
               <div class="works-child">
@@ -396,9 +397,14 @@ gsap.fromTo(
           position: sticky; /* Sticky positioning */
           top: 0;
           color: $bgcolorblack;
-          // display: flex;
+          display: flex;
+
           overflow: hidden;
           // padding-right: 5rem;
+          // align-items: center;
+
+
+          
           
 
           .work-text {
@@ -406,7 +412,9 @@ gsap.fromTo(
             text-align: center;
             // border: solid;
             h1 {
-              font-size: clamp(400px, 2vw,400px); 
+              // font-size: clamp(400px, 0vw,400px); 
+              font-size: 400px;
+              
                 // margin: 0;
                 // font-size: 20px; /* Dynamically adjust font size */
                 text-align: center;
@@ -507,7 +515,7 @@ gsap.fromTo(
   }
 }
 
-@media (max-width: 200px) {
+@media (max-width: 800px) {
   .sectioncontainer {
       .section {
           width: 100vw;
@@ -516,60 +524,63 @@ gsap.fromTo(
           .work-header {
               height: 20rem;
               background-color: $bgcolorwhite;
-              position: relative;
+              // position: relative;
               // display: flex;
               // justify-content: center;
               // align-items: center;
               // padding-inline: 0.5rem;
-              border: solid red;
+              border: solid green;
 
-              .work-text {
-                  // overflow: hidden;
-                  position: absolute;
-              // flex: 1;
-              border: solid red;
-              // letter-spacing: 1rem;
-          }
-          h1 {
-                  // margin: 0;
-                  // font-size: 33vw; /* Dynamically adjust font size */
-                  text-align: center;
-                  color: #333;
-                  // width: 100%;
-                  font-weight: 500;
-                  letter-spacing: 0px;
-                  
-              }
-          .work-text1 {
-              // width: 146vw;
-              h1 {
-                  // transform: translateX(-106%);
-              }
-          }
-          .work-text2 {
-              // width: 103vw;
-              // padding-right: 1rem;
+              .work-text-container {
+            border: solid blue;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .work-text {
+          position: absolute;
+  
+                // overflow: hidden;
+                border: solid black;
+                // height: 7rem;
+                display: flex;
+                align-items: center;
+                
+  
+                h1 {
+                  font-size: 31vw; /* Dynamically adjust font size */
+                  // font-size: 15vw;
+                  border: solid red;
+      
+                    }
+        }
+        .work-text1 {
+          // border: solid blue;
+          width: 34%;
+          background-color: white;
+          z-index: 7;
+          overflow: hidden;
+        }
+        .work-text2 {
+          width: 59%;
+          background-color: white;
+          z-index: 6;
+          overflow: hidden;
+        }
+        .work-text3 {
+          width: 79%;
+          background-color: white;
+          z-index: 5;
+          overflow: hidden;
+        }
+        .work-text4 {
+          // border: solid green;
+          width: 100%;
+          background-color: white;
+          z-index: 4;
+          overflow: hidden;
+        }
 
-
-              h1 {
-                  // transform: translateX(-32vw);
-              }
-          }
-          .work-text3 {
-              // width:70vw ;
-              // padding-right: 1rem;
-              // border: solid;
-              h1 {
-                  // transform: translateX(-58vw);
-              }
-          }
-          .work-text4 {
-              // width:70vw ;
-              // padding-right: 1rem;
-              h1 {
-                  // transform: translateX(-76vw);
-              }
-          } 
+          }  
 
 
 
