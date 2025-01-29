@@ -251,7 +251,6 @@ onMounted(() => {
         width: 80rem;
         height: 100%; /* Full viewport height */
         margin-inline: auto;
-        overflow: hidden;
 
         .work-header {
             height: 100vh;
@@ -331,8 +330,8 @@ onMounted(() => {
 
 @media (max-width: 800px) {
     .sectioncontainer {
-        width: 100vw;
         .section {
+            width: 100vw;
             border-radius: 0 0 1rem 1rem;
 
             .work-header {

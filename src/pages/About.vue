@@ -2,7 +2,7 @@
     <div class="body">
 
         <AboutSection1 />
-        <Footer />
+        <!-- <Footer /> -->
 
       </div>
 
