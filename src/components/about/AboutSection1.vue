@@ -393,7 +393,7 @@ gsap.fromTo(
           height: 100vh;
           background-color: white;
           border: solid red;
-          // position: sticky; /* Sticky positioning */
+          position: sticky; /* Sticky positioning */
           top: 0;
           color: $bgcolorblack;
           // display: flex;
