@@ -392,19 +392,21 @@ gsap.fromTo(
       .work-header {
           height: 100vh;
           background-color: white;
-          // border: solid red;
-          position: sticky; /* Sticky positioning */
+          border: solid red;
+          // position: sticky; /* Sticky positioning */
           top: 0;
           color: $bgcolorblack;
           // display: flex;
           overflow: hidden;
+          // padding-right: 5rem;
+          
 
           .work-text {
             position: absolute;
             text-align: center;
             // border: solid;
             h1 {
-              font-size: clamp(20px, 32vw,400px); 
+              font-size: clamp(400px, 2vw,400px); 
                 // margin: 0;
                 // font-size: 20px; /* Dynamically adjust font size */
                 text-align: center;
@@ -505,7 +507,7 @@ gsap.fromTo(
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 200px) {
   .sectioncontainer {
       .section {
           width: 100vw;
