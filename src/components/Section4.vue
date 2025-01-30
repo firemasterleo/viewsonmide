@@ -272,19 +272,19 @@ onMounted(() => {
 
         .works {
             height: fit-content;
-            // border: solid red;
+            border: solid red;
             display: flex;
             flex-direction: column;
             gap: 1rem;
 
             .works-child {
-                // height: 24rem;
-                // border: solid blue;
+                height: 24rem;
+                border: solid blue;
                 background-color: $bgcolorblack;
 
                 .image {
-                    width: 100%;
-                    height: 100%;
+                    width: 20rem;
+                    height: auto;
 
                     img {
                         width: 100%;
