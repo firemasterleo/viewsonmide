@@ -243,7 +243,7 @@
   </script>
   
   <style lang="scss" scoped>
-  @import '/src/sass/variables';
+  @import 'src/sass/variables';
   
   .section1 {
     height: 100vh;

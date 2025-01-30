@@ -24,22 +24,22 @@
           <div class="works">
               <div class="works-child">
                   <div class="image">
-                      <img src="../assets/vom-image1.jpeg" loading="lazy" alt="">
+                      <img src="/src/assets/vom-image1.jpeg" loading="lazy" alt="">
                   </div>
               </div>
               <div class="works-child">
                   <div class="image">
-                      <img src="../assets/vom-image6.jpeg" loading="lazy" alt="">
+                      <img src="/src/assets/vom-image6.jpeg" loading="lazy" alt="">
                   </div>
               </div>
               <div class="works-child">
                   <div class="image">
-                      <img src="../assets/vom-image3.jpeg" loading="lazy" alt="">
+                      <img src="/src/assets/vom-image3.jpeg" loading="lazy" alt="">
                   </div>
               </div>
               <div class="works-child">
                   <div class="image">
-                      <img src="../assets/vom-image4.jpeg" loading="lazy" alt="">
+                      <img src="/src/assets/vom-image4.jpeg" loading="lazy" alt="">
                   </div>
               </div>
           </div>
@@ -238,7 +238,7 @@ gsap.fromTo(
 </script>
 
 <style lang="scss" scoped>
-@import '/src/sass/variables';
+@import 'src/sass/variables';
 
 
 .sectioncontainer {
