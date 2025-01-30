@@ -240,6 +240,7 @@ gsap.fromTo(
 <style lang="scss" scoped>
 @import '/src/sass/variables';
 
+
 .sectioncontainer {
   background-color: #111315;
   width: 100%;
