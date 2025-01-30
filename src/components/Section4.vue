@@ -302,6 +302,8 @@
             // border: solid green;
             // height: 100%;
             // top: 0;
+          background-color: $bgcolorblack; /* Solid black background */
+
             h1 {
               // font-size: clamp(400px, 0vw,400px); 
               font-size: 435px;
