@@ -238,7 +238,7 @@ gsap.fromTo(
 </script>
 
 <style lang="scss" scoped>
-@import 'src/sass/variables';
+@import '/src/sass/variables';
 
 
 .sectioncontainer {
