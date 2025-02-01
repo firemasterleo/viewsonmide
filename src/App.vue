@@ -1,10 +1,11 @@
 
 <template>
-    <div v-if="showOverlay" class="overlay">
-    <h1>Loading...</h1> <!-- Or an animation -->
-  </div>
+    <!-- <div v-if="showOverlay" class="overlay">
+    <h1>Loading...</h1>
+  </div> -->
   <div class="routersection">
-    <router-view/>
+    <router-view />
+
   </div>
 </template>
 
@@ -27,7 +28,6 @@
   transition: opacity 0.5s ease-out;
 }
 
-
 </style>
 
 <script setup>
@@ -39,15 +39,5 @@ import LenisScroll from './components/LenisScroll.vue';
 import { ref } from "vue";
 const showOverlay = ref(false);
 const router = useRouter();
-
-router.beforeEach((to, from, next) => {
-  showOverlay.value = true; // Show transition screen
-
-  setTimeout(() => {
-    showOverlay.value = false; // Hide after 1s
-    next(); // Navigate to new route
-  }, 1000);
-});
-
 
 </script>
