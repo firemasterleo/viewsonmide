@@ -27,7 +27,20 @@ const router = createRouter({
         
     ],
 
-
+    scrollBehavior(to, from, savedPosition) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if (to.hash) {
+            return resolve({ selector: to.hash });
+          } else if (savedPosition) {
+            return resolve(savedPosition);
+          } else {
+            resolve(document.getElementById("app").scrollIntoView({ behavior: "smooth" }));
+          }
+        }, 0);
+      });
+     
+    },
 });
 
 export default router
