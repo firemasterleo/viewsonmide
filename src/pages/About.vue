@@ -27,4 +27,9 @@ import { ref } from 'vue';
 import AboutSection1 from '../components/about/AboutSection1.vue'; // Adjust path as necessary
 import Footer from '/src/components/Footer.vue'; // Adjust path as necessary
 
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  window.scrollTo(0, 0); // Scroll to the top on mount
+});
 </script>

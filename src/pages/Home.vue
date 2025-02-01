@@ -34,4 +34,9 @@ import Section3 from '../components/Section3.vue'; // Adjust path as necessary
 import Section4 from '../components/Section4.vue'; // Adjust path as necessary
 import Footer from '../components/Footer.vue'; // Adjust path as necessary
 
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  window.scrollTo(0, 0); // Scroll to the top on mount
+});
 </script>

@@ -3,10 +3,10 @@
     <!-- <div v-if="showOverlay" class="overlay">
     <h1>Loading...</h1>
   </div> -->
-  
   <div class="routersection">
-    <router-view />
-
+    <transition name="fade" mode="out-in">
+    <router-view /> <!-- Content that will transition after loading -->
+  </transition>
   </div>
 </template>
 
@@ -28,6 +28,12 @@
   opacity: 1;
   transition: opacity 0.5s ease-out;
 }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
 
 </style>
 
@@ -40,5 +46,15 @@ import LenisScroll from './components/LenisScroll.vue';
 import { ref } from "vue";
 const showOverlay = ref(false);
 const router = useRouter();
+
+// router.beforeEach((to, from, next) => {
+//   showOverlay.value = true; // Show transition screen
+
+//   setTimeout(() => {
+//     showOverlay.value = false; // Hide after 1s
+//     next(); // Navigate to new route
+//   }, 1000);
+// });
+
 
 </script>
