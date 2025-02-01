@@ -26,7 +26,10 @@ const router = createRouter({
         },
         
     ],
-  
+    scrollBehavior(to, from, savedPosition) {
+      return { top: 0, left: 0 }; // Always scroll to the top for every route change
+    }
+    
 });
 
 export default router
