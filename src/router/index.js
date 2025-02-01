@@ -37,7 +37,7 @@ const router = createRouter({
           } else {
             resolve(document.getElementById("app").scrollIntoView({ behavior: "smooth" }));
           }
-        }, 0);
+        }, 400);
       });
      
     },
