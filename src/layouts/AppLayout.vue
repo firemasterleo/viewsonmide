@@ -85,12 +85,12 @@
     overflow: hidden;
 
     .v {
-      font-size: 40px;
+      font-size: 35px;
       color: $textcolorblack;
       // border: solid red;
     }
     .m {
-      font-size: 40px;
+      font-size: 35px;
       color: $textcolorblack;
       
       // border: solid red;
