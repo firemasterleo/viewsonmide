@@ -166,8 +166,8 @@ onMounted(() => {
     .to(".image", { y: -100, opacity: 0 }, "-=0.6") // O exits slightly before V finishes
     .to(".m", { x: 100, opacity: 0 }, "-=0.6") // M exits slightly before O finishes
 
-    .to(".top", { y: "-100%", ease: "cubic-bezier(0.25, 1, 0.5, 1)" }, "-=0.6") // Move up
-    .to(".bottom", { y: "100%", ease: "cubic-bezier(0.25, 1, 0.5, 1)" }, "-=0.6"); // Move down
+    .to(".top", { y: "-100%", duration: 1, ease: "power4.inOut" }, "-=0.5")
+    .to(".bottom", { y: "100%", duration: 1, ease: "power4.inOut" }, "<"); // Move down
 });
 onUnmounted(() => {
   clearTimeout(overlayTimeout); // Prevent timeout memory leaks
