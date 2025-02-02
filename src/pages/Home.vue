@@ -50,7 +50,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   setTimeout(() => {
-    nextTick(() => {
+    nextTick(() => {  //use nexttick cos we dont want the animation stuck in the last dom
       console.log('DOM is fully updated, performing cleanup...');
   
       // Perform cleanup logic after the new route's DOM is fully updated and rendered
