@@ -3,11 +3,16 @@
     <!-- <div v-if="showOverlay" class="overlay">
     <h1>Loading...</h1>
   </div> -->
-  <div class="routersection">
-    <transition name="fade" mode="out-in">
-    <router-view /> <!-- Content that will transition after loading -->
-  </transition>
-  </div>
+
+
+
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <!-- Dynamically render the component with the transition -->
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    
 </template>
 
 <style lang="scss">
@@ -29,9 +34,9 @@
   transition: opacity 0.5s ease-out;
 }
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 600ms ease;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter-from, .fade-leave-to {
   opacity: 0;
 }
 
@@ -40,6 +45,8 @@
 <script setup>
 import { useRouter } from 'vue-router';
 import { onMounted, onBeforeUnmount } from 'vue';
+import Header from './components/Header.vue'; // Adjust path as necessary
+
 
 
 import LenisScroll from './components/LenisScroll.vue';
@@ -55,6 +62,5 @@ const router = useRouter();
 //     next(); // Navigate to new route
 //   }, 1000);
 // });
-
 
 </script>

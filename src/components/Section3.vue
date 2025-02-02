@@ -315,7 +315,10 @@
 
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount,onUnmounted  } from 'vue';
+import { ref, onMounted, onBeforeUnmount,onUnmounted, nextTick  } from 'vue';
+
+const router = useRouter(); 
+import { useRouter } from 'vue-router';
 
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -391,7 +394,8 @@ onMounted(() => {
         { y: '110%' },  // Start from off-screen (bottom)
         {
           y: '0%', // Move to normal position (0%)
-          ease: 'expo.out',
+          ease: "cubic-bezier(0.25, 1, 0.5, 1)",
+          
           scrollTrigger: {
             trigger: '.infant1', // The element that triggers the animation
             start: 'top 89%',   // Start when the top of the element hits the bottom of the viewport
@@ -409,7 +413,7 @@ onMounted(() => {
         { y: '100%' },  // Start from off-screen (bottom)
         {
           y: '0%', // Move to normal position (0%)
-          ease: 'power2.out',
+          ease: "cubic-bezier(0.25, 1, 0.5, 1)",
           scrollTrigger: {
             trigger: '.infant2', // The element that triggers the animation
             start: 'top 89%',   // Start when the top of the element hits the bottom of the viewport
@@ -426,7 +430,7 @@ onMounted(() => {
         { y: '100%' },  // Start from off-screen (bottom)
         {
           y: '0%', // Move to normal position (0%)
-          ease: 'power2.out',
+          ease: "cubic-bezier(0.25, 1, 0.5, 1)",
           scrollTrigger: {
             trigger: '.infant3', // The element that triggers the animation
             start: 'top 89%',   // Start when the top of the element hits the bottom of the viewport
@@ -434,27 +438,43 @@ onMounted(() => {
             scrub: 1, 
       invalidateOnRefresh: true, // Recalculate start/end on resize or refresh
       // Smooth scrubbing with slight delay
-            // markers: true,       // Uncomment for debugging
-          }
-        }
-      );
-  });
+      // markers: true,       // Uncomment for debugging
+    }
+  }
+);
+});
 
 
 });
 
 
 
-onBeforeUnmount(() => {
-  // Kill all ScrollTrigger instances
-  ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-
-  // Kill the matchMedia instance to remove its listeners
-  mm.revert();
-
-  // Optionally, clear the global GSAP timeline if necessary
-  gsap.globalTimeline.clear();
+// Listen to route changes for cleanup after route transition
+router.afterEach(() => {
+  // Use setTimeout to ensure there's a visual update in between
+  
+  
 });
+
+
+
+
+
+
+// onBeforeUnmount(() => {
+//   setTimeout(() => {
+//     nextTick(() => {
+//       console.log('DOM is fully updated, performing cleanup...');
+  
+//       // Perform cleanup logic after the new route's DOM is fully updated and rendered
+//       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+//       gsap.globalTimeline.clear();  // Clean up GSAP animations
+//       mm.revert(); // Revert matchMedia if necessary
+  
+//     });
+//   },); // Adjust the timeout duration (in milliseconds) if necessary
+
+// });  
 
 
 </script>

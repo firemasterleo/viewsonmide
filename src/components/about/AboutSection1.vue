@@ -308,7 +308,7 @@ gsap.fromTo(
           // top: 0;
           h1 {
             // font-size: clamp(400px, 0vw,400px); 
-            font-size: 435px;
+            font-size: 35px;
             font-weight: 400;
             // margin: 0;
             // font-size: 20px; /* Dynamically adjust font size */

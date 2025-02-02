@@ -306,7 +306,7 @@
 
             h1 {
               // font-size: clamp(400px, 0vw,400px); 
-              font-size: 435px;
+              font-size: 105px;
               font-weight: 400;
               // margin: 0;
               // font-size: 20px; /* Dynamically adjust font size */
@@ -318,7 +318,7 @@
           }
     
           .work-text1 {
-            // border: solid blue;
+            border: solid blue;
             width: 33%;
             // background-color: $bgcolorblack; /* Solid black background */
             z-index: 7;
