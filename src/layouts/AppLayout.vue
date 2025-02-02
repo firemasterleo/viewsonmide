@@ -42,8 +42,8 @@
 .overlay {
   position: fixed;
   width: 100%;
-  height: 100dvh;
-    background: rgba(255, 255, 255, 0);
+  height: 100vh;
+  background: rgba(255, 255, 255, 0);
   color: white;
   display: flex;
   
@@ -156,7 +156,7 @@ const router = useRouter();
 onMounted(() => {
   overlayTimeout = setTimeout(() => {
     showOverlay.value = false;
-  }, 2700);
+  }, 2500);
 
   vomAnimation = gsap.timeline({ defaults: { duration: 0.6, ease: "power2.out" }, delay: 0.2 })
     .from(".v", { y: -100, opacity: 0 }) // V enters
@@ -166,8 +166,8 @@ onMounted(() => {
     .to(".image", { y: -100, opacity: 0 }, "<") // O exits slightly before V finishes
     .to(".m", { x: 100, opacity: 0 }, "<") // M exits slightly before O finishes
 
-    .to(".top", { y: "-100%",  opacity: 1, duration: 1, ease: "power2.inout" }, "-=0.5")
-    .to(".bottom", { y: "100%",  opacity: 1, duration: 1, ease: "power2.inout" }, "<"); // Move down
+    .to(".top", { y: "-100%",  opacity: 1, duration: 1.6, ease: "power4.inOut" }, "-=0.5")
+    .to(".bottom", { y: "100%",  opacity: 1, duration: 1.6, ease: "power4.inOut" }, "<"); // Move down
 });
 onUnmounted(() => {
   clearTimeout(overlayTimeout); // Prevent timeout memory leaks
