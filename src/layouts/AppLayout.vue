@@ -97,8 +97,8 @@
     }
 
     .image {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2.2rem;
+      height: 2.2rem;
       // border:solid;
 
       img {
@@ -158,7 +158,7 @@ onMounted(() => {
     showOverlay.value = false;
   }, 2500);
 
-  vomAnimation = gsap.timeline({ defaults: { duration: 0.6, ease: "power2.out" }, delay: 0.4 })
+  vomAnimation = gsap.timeline({ defaults: { duration: 0.6, ease: "power2.out" }, delay: 0.2 })
     .from(".v", { y: -100, opacity: 0 }) // V enters
     .from(".image", { y: 100, opacity: 0 }, "<") // O enters slightly before V finishes
     .from(".m", { x: 100, opacity: 0, }, "<") // M enters slightly before O finishes
