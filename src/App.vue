@@ -1,15 +1,17 @@
 
 <template>
-  <div v-if="showOverlay" class="overlay">Loading...</div>
-  <router-view />
+    <div v-if="showOverlay" class="overlay">
+    <h3>Vom</h3>
+  </div>
 
 
 
-    <!-- <router-view v-slot="{ Component }">
+    <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
+        <!-- Dynamically render the component with the transition -->
         <component :is="Component" />
       </transition>
-    </router-view> -->
+    </router-view>
     
 </template>
 
@@ -52,19 +54,23 @@ import Header from './components/Header.vue'; // Adjust path as necessary
 import LenisScroll from './components/LenisScroll.vue';
 import { ref } from "vue";
 
-const showOverlay = ref(false);
+const showOverlay = ref(true);
 const route = useRoute();
 const router = useRouter();
 
-router.beforeEach((to, from, next) => {
-  showOverlay.value = true; // Show transition screen
+// router.beforeEach((to, from, next) => {
+//   showOverlay.value = true; // Show transition screen
 
+//   setTimeout(() => {
+//     showOverlay.value = false; // Hide after 1s
+//     next(); // Navigate to new route
+//   }, 1000);
+// });
+
+onMounted(() => {
   setTimeout(() => {
-    showOverlay.value = false; // Hide after 1s
-    next(); // Navigate to new route
-  }, 1000);
+    showOverlay.value = false;
+  }, 1500); // Adjust delay time as needed
 });
-
-
 
 </script>
