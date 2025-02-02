@@ -43,9 +43,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
-  nextTick(() => {
-    window.scrollTo(0, 0); // Ensures scroll resets after the fade transition is done
-  });
+  window.scrollTo(0, 0); // Ensures scroll resets after the fade transition is done
+
 });
 
 
@@ -60,8 +59,9 @@ onBeforeUnmount(() => {
       mm.revert(); // Revert matchMedia if necessary
   
     });
-  },600); // Adjust the timeout duration (in milliseconds) if necessary
+  },500); // important Adjust the timeout duration to balance
 
+  
 });  
 
 

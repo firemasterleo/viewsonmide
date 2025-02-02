@@ -34,7 +34,7 @@
   transition: opacity 0.5s ease-out;
 }
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 600ms ease;
+  transition: opacity 500ms ease-out;
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0;

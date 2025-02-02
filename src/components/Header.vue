@@ -5,7 +5,7 @@
             <header class="header">
                 <router-link to="/">
                 <div class="logo">
-                        <h1>VOM</h1>
+                        <h1>VOoM</h1>
                         
                         
                     </div>

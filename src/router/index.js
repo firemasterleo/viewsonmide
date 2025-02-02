@@ -22,19 +22,12 @@ const router = createRouter({
     ],
 
     // scrollBehavior(to, from, savedPosition) {
-    //   return new Promise((resolve, reject) => {
-    //     setTimeout(() => {
-    //       if (to.hash) {
-    //         return resolve({ selector: to.hash });
-    //       } else if (savedPosition) {
-    //         return resolve(savedPosition);
-    //       } else {
-    //         resolve(document.getElementById("app").scrollIntoView({ behavior: "smooth" }));
-    //       }
-    //     }, 0);
-    //   });
-     
-    // },
+    //   if (savedPosition) {
+    //     return savedPosition; // Restore previous scroll position when pressing back
+    //   } else {
+    //     return { top: 0 }; // Scroll to top for new navigations
+    //   }
+    // }
 
 });
 

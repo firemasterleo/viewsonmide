@@ -251,12 +251,12 @@ gsap.fromTo(
 
 .section1 {
   height: 100vh;
-  background-color: $bgcolorwhite;
+  background-color: rgb(30, 29, 29);
 }
 
 .sectioncontainer {
   background-color: #74787c;
-  background-color: #111315;
+    background-color: rgb(30, 29, 29);
 
   width: 100%;
   height: fit-content; /* Large enough to allow scrolling */
