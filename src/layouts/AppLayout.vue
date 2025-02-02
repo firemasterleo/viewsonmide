@@ -59,7 +59,7 @@
     top:0;
     height: 50%;
     width: 100%;
-    background: black;
+    background-color: rgb(30, 29, 29);
 
     
   }
@@ -69,7 +69,7 @@
     width: 100%;
     // border :solid;
     position:absolute;
-    background: black;
+    background-color: rgb(30, 29, 29);
   }
 
 
