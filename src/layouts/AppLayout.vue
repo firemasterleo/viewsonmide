@@ -25,7 +25,7 @@
 
 
 
-    <router-view v-slot="{ Component }">
+    <router-view v-if="!showOverlay" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <!-- Dynamically render the component with the transition -->
         <component :is="Component" />
@@ -36,13 +36,14 @@
 
 <style lang="scss">
 @use '../sass/main.scss';
+@import '../sass/variables.scss';
 
 
 .overlay {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0);
   color: white;
   display: flex;
   
@@ -59,7 +60,7 @@
     top:0;
     height: 50%;
     width: 100%;
-    background-color: rgb(30, 29, 29);
+    background: $bgcolorwhite;
 
     
   }
@@ -69,7 +70,7 @@
     width: 100%;
     // border :solid;
     position:absolute;
-    background-color: rgb(30, 29, 29);
+    background: $bgcolorwhite;
   }
 
 
@@ -85,10 +86,13 @@
 
     .v {
       font-size: 40px;
+      color: $textcolorblack;
       // border: solid red;
     }
     .m {
       font-size: 40px;
+      color: $textcolorblack;
+      
       // border: solid red;
     }
 
