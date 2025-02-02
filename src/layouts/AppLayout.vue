@@ -25,7 +25,7 @@
 
 
 
-    <router-view v-if="!showOverlay" v-slot="{ Component }">
+    <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <!-- Dynamically render the component with the transition -->
         <component :is="Component" />
