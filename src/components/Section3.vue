@@ -108,8 +108,7 @@
         .inner-child {
           padding-inline: 1.2rem;
           border-top: solid 1px black;
-          background-color: rgb(23, 21, 21);
-          background-color: $bgcolorwhite;
+          background-color: #A9A9A9;
           height: 100%;
           display: flex;
           align-items: center;
