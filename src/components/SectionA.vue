@@ -64,11 +64,15 @@ p {
 .image-container {
     position: absolute;
     bottom: 0;
+    left: 0;
     display: flex;
 
    align-items: flex-end;
     .image {
         flex: 1;
+        width: 100%;
+
+    
 
         img {
             align-items: flex-end;
@@ -78,13 +82,13 @@ p {
         }
     }
     .image1 {
-        height: 12rem;
+        height: 20vh;
     }
     .image2 {
-height: 17rem;
+height: 25vh;
     }
     .image3 {
-        height: 22rem;
+        height: 30vh;
 
     }
 }
