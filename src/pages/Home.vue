@@ -2,8 +2,9 @@
     <div class="body">
       
         <Header />
-        <HeroSection />
-        <Section2 />
+        <!-- <HeroSection /> -->
+        <!-- <Section2 /> -->
+        <SectionA />
         <Section3 />
         <Section4 />
         <Footer />
@@ -34,6 +35,7 @@ import HeroSection from '../components/HeroSection.vue'; // Adjust path as neces
 import Section2 from '../components/Section2.vue'; // Adjust path as necessary
 import Section3 from '../components/Section3.vue'; // Adjust path as necessary
 import Section4 from '../components/Section4.vue'; // Adjust path as necessary
+import SectionA from '../components/SectionA.vue'; // Adjust path as necessary
 import Footer from '../components/Footer.vue'; // Adjust path as necessary
 import Header from '../components/Header.vue'; // Adjust path as necessary
 
