@@ -16,13 +16,15 @@
 <style lang="scss" scoped>
 
  .body {
-    background-color: black;
+  background: #0A0A0A;
+    
     // border: solid red;
     width: 100vw;
     height: fit-content;
     // overflow-x: scroll ;
 
     // margin-inline: auto;
+    position: relative;
 }
 
 

@@ -52,7 +52,6 @@
     position: fixed;
     top: 0;
     z-index: 10;
-
    .section1 {      
         // margin-inline: auto;
         // border: solid green;
@@ -79,21 +78,26 @@
             justify-content: space-between;
             align-items: center;
             overflow: hidden;
-
+            z-index: 20;
             .logo{
                 // border-right: solid 2px #7cae65;
                 // border: solid red;
                 padding-right: 1rem;
                 letter-spacing: 6px;
-                color: #7e848a;
                 font-size: 12px;
+                position: relative; /* Ensure proper layering */
+                background: transparent;
+                
+                
+                h1 {
+                    color: white;
+                    mix-blend-mode: difference;
+                    position: relative; /* Ensure it stays in front */
+                    z-index: 2; /* Ensures it stays in front */
 
 
 
-                img {
-                    height: 1.8rem;
-                    width: auto;
-                }
+}
             }
             .nav-bar {
                 // border: solid red;

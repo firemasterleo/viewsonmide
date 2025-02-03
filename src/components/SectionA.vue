@@ -19,6 +19,8 @@
   width: 100%;
   height: 100vh; /* Large enough to allow scrolling */
 display: flex;
+position: relative;
+z-index: 9;
 
 
   .section {
@@ -26,6 +28,8 @@ display: flex;
     width: 80rem;
     height: 100vh; /* Full viewport height */
     margin-inline: auto;
+position: relative;
+
 
   }
 }

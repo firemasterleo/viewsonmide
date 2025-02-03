@@ -51,9 +51,8 @@
   position: fixed;
   width: 100%;
   height: 100dvh;
-  background: rgba(255, 255, 255, 0);
-  color: white;
   display: flex;
+  overflow: hidden;
   
   align-items: center;
   justify-content: center;
