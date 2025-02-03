@@ -42,7 +42,7 @@
 .overlay {
   position: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background: rgba(255, 255, 255, 0);
   color: white;
   display: flex;
@@ -61,7 +61,7 @@
     height: 50%;
     width: 100%;
     background: $bgcolorblack;
-    background: rgb(5, 5, 5);
+    background: #0A0A0A;
 
     
   }
@@ -72,7 +72,7 @@
     // border :solid;
     position:absolute;
     background: $bgcolorblack;
-    background: rgb(5, 5, 5);
+    background: #0A0A0A;
 
   }
 
