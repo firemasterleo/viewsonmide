@@ -184,7 +184,7 @@
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
+            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1.7,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
@@ -200,7 +200,7 @@
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
+            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1.7,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
@@ -216,7 +216,7 @@
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
+            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1.7,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }
@@ -232,7 +232,7 @@
           scrollTrigger: {
             trigger: '.work-text', // The element that triggers the animation
             start: 'top 90%',   // Start when the top of the element hits the bottom of the viewport
-            end: 'bottom 70%',     // End when the bottom of the element reaches the top of the viewport
+            end: 'bottom 80%',     // End when the bottom of the element reaches the top of the viewport
             scrub: 1.7,            // Smooth scrubbing with slight delay
             // markers: true,       // Uncomment for debugging
           }

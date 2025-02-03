@@ -62,20 +62,24 @@
   transition: opacity 0.5s ease-out;
 
   .top {
-    // border :solid;
+    border :none;
     position:absolute;
     top:0;
-    height: 50%;
-    width: 100%;
+    left: 0;
+    height: 50.05vh;
+    width: 100vw;
     background: $bgcolorblack;
     background: #0A0A0A;
 
     
   }
   .bottom {
+    border :none;
+
     bottom: 0;
-    height: 50%;
-    width: 100%;
+    left: 0;
+    height: 50.05vh;
+    width: 100vw;
     // border :solid;
     position:absolute;
     background: $bgcolorblack;
