@@ -84,7 +84,6 @@ p {
             font-size: 12px;
             font-weight: 600;
             color: #1A1A1A;
-            font-family: "Audiowide", serif;   
             font-family: "Orbitron", serif;
             // letter-spacing: 1px;
              }
@@ -101,9 +100,13 @@ p {
             gap: 8px;
             p{
                 padding-bottom: 4px;
+                width: fit-content;
                 
                 border-bottom: solid 1px;
+
+                
             }
+            
 
             .email {
                 margin-bottom: 1rem;

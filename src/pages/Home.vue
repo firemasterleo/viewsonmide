@@ -3,7 +3,7 @@
       
         <Header />
         <!-- <Section2 /> -->
-        <!-- <HeroSection /> -->
+        <HeroSection />
         <SectionA />
         <Section3 />
         <Section4 />
