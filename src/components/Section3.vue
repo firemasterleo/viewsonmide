@@ -109,6 +109,8 @@
           padding-inline: 1.2rem;
           border-top: solid 1px black;
           background-color: #A9A9A9;
+  background-color: #8E8E8E;
+
           height: 100%;
           display: flex;
           align-items: center;
