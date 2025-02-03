@@ -10,15 +10,15 @@
                     <p>2025</p>
                 </div>
                 <div class="projects">
-                    <p>FACELESS</p>
-                    <p>MUSIC VIDEOS-</p>
-                    <p>BERLIN 2025</p>
-                    <p>lASGIDI</p>
+                    <p>Faceless</p>
+                    <p>Music Videos-</p>
+                    <p>Berlin 2025</p>
+                    <p>Lagos Fashion</p>
                 </div>
                 <div class="contact">
-                    <p class="email">HELLO@VIEWSONMIDE.COM</p>
-                    <p>INSTAGRAM</p>
-                    <p>LINKED-IN</p>
+                    <p class="email">hello@viewsonmide.com</p>
+                    <p>Instagram</p>
+                    <p>Linked-in</p>
                 </div>
             </div>
         </div>
@@ -82,9 +82,13 @@ p {
 
         p {
             font-size: 12px;
-            font-weight: 100;
+            font-weight: 600;
             color: #1A1A1A;
-            font-family: "Audiowide", serif;        }
+            font-family: "Audiowide", serif;   
+            font-family: "Orbitron", serif;
+            // letter-spacing: 1px;
+             }
+
 
         .projects {
             display: flex;
