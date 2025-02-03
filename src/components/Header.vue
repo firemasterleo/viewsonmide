@@ -90,7 +90,7 @@
                 
                 
                 h1 {
-                    color: white;
+                    color: #2E2E2E;
                     mix-blend-mode: difference;
                     position: relative; /* Ensure it stays in front */
                     z-index: 2; /* Ensures it stays in front */
@@ -120,11 +120,14 @@
                         // padding-inline: 0.2rem;
                         p {
 
-                            font-size: 12px;
+                            font-size: 14px;
                             letter-spacing: 1px;
                             font-family: "Poppins", serif;
                             cursor: pointer;
                             color: $textcolorwhite;
+                            border-bottom: solid 1px;
+                            color: #2E2E2E;
+
      
 
 

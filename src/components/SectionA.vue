@@ -1,6 +1,11 @@
 <template>
     <div class="sectioncontainer">
       <div class="section">
+        <div class="top-container">
+            <div class="hero-text">
+                <p>"Welcome to my world through my Views—where every image speaks and every frame holds a story."</p>
+            </div>
+        </div>
 <div class="image-container">
     <div class="image image1">
         <img src="../assets/vom-image1.jpeg" loading="lazy" alt="">
@@ -44,6 +49,17 @@ background-color: #8E8E8E;
     height: 100vh; /* Full viewport height */
     margin-inline: auto;
 position: relative;
+padding-inline: 1rem;
+.top-container {
+    .hero-text {
+        margin-top: 12.5rem;
+p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2E2E2E;
+}
+    }
+}
 
 .image-container {
     position: absolute;
@@ -56,21 +72,19 @@ position: relative;
 
         img {
             align-items: flex-end;
-            // border: solid red;
-            // align-self: end; /* Moves the image to the bottom */
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
     .image1 {
-        height: 15rem;
+        height: 12rem;
     }
     .image2 {
-height: 20rem;
+height: 17rem;
     }
     .image3 {
-        height: 25rem;
+        height: 22rem;
 
     }
 }
