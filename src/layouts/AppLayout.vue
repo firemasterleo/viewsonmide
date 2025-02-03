@@ -61,7 +61,7 @@
     height: 50%;
     width: 100%;
     background: $bgcolorblack;
-    background: black;
+    background: rgb(5, 5, 5);
 
     
   }
@@ -72,7 +72,7 @@
     // border :solid;
     position:absolute;
     background: $bgcolorblack;
-    background: black;
+    background: rgb(5, 5, 5);
 
   }
 
