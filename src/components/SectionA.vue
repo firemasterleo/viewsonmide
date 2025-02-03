@@ -56,7 +56,7 @@ padding-inline: 1rem;
 p {
     font-size: 22px;
     font-weight: 600;
-    color: #2E2E2E;
+    color: #1A1A1A;
 }
     }
 }
