@@ -2,6 +2,13 @@
   <div class="section1">
 
   </div>
+  <div class="section12">
+
+  </div>
+  <div class="section13">
+
+  </div>
+
 
   <div class="sectioncontainer">
       <div class="section">
@@ -250,8 +257,19 @@ gsap.fromTo(
 @import '/src/sass/variables';
 
 .section1 {
-  height: 100vh;
+  height: 50vh;
   background-color: rgb(30, 29, 29);
+  background-color: #484848;
+}
+.section12 {
+  height: 50vh;
+  background-color: rgb(30, 29, 29);
+  background-color: #8E8E8E;
+}
+.section13 {
+  height: 50vh;
+  background-color: rgb(30, 29, 29);
+  background-color: #333333;
 }
 
 .sectioncontainer {
