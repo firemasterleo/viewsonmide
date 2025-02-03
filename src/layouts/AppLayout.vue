@@ -159,18 +159,18 @@ const router = useRouter();
 onMounted(() => {
   overlayTimeout = setTimeout(() => {
     showOverlay.value = false;
-  }, 2500);
+  }, 2700);
 
   vomAnimation = gsap.timeline({ defaults: { duration: 0.6, ease: "power2.out" }, delay: 0.2 })
     .from(".v", { y: -100, opacity: 0 }) // V enters
     .from(".image", { y: 100, opacity: 0 }, "<") // O enters slightly before V finishes
     .from(".m", { x: 100, opacity: 0, }, "<") // M enters slightly before O finishes
-    .to(".v", { y: 100, opacity: 0, delay: 0.7 }) // V exits
+    .to(".v", { y: 100, opacity: 0, delay: 0.8 }) // V exits
     .to(".image", { y: -100, opacity: 0 }, "<") // O exits slightly before V finishes
     .to(".m", { x: 100, opacity: 0 }, "<") // M exits slightly before O finishes
 
-    .to(".top", { y: "-100%", duration: 1.8, ease: "power4.inOut" }, "-=0.5")
-    .to(".bottom", { y: "100%", duration: 1.8, ease: "power4.inOut" }, "<"); // Move down
+    .to(".top", { y: "-100%", duration: 0.8, ease: "cubic-bezier(0.6, 0, 0.2, 1)" }, "-=0.25")
+    .to(".bottom", { y: "100%", duration: 0.8, ease: "cubic-bezier(0.6, 0, 0.2, 1)" }, "<"); // Move down
 });
 onUnmounted(() => {
   clearTimeout(overlayTimeout); // Prevent timeout memory leaks
