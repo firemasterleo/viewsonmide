@@ -269,7 +269,7 @@ gsap.fromTo(
 .section13 {
   height: 50vh;
   background-color: rgb(30, 29, 29);
-  background-color: #333333;
+  background-color: #A9A9A9;
 }
 
 .sectioncontainer {
