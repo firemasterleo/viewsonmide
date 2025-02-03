@@ -126,7 +126,7 @@ p {
     .image {
         flex: 1;
         width: 100%;
-        background-color: black;
+        // background-color: black;
 
     
 
@@ -135,7 +135,7 @@ p {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.8) 100%);
+            // mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.8) 100%);
         }
     }
     .image1 {
