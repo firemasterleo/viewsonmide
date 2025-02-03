@@ -47,7 +47,7 @@
             // border: solid yellow;
             // background-color: rgba(0, 0, 0, 0.893);
             background: linear-gradient(
-                to bot,
+                to top,
                 rgb(0, 0, 0), /* Least transparent at the top */
                 rgba(0, 0, 0, 0.708)  /* 0.854 Darker and less transparent at the bottom */
             );
