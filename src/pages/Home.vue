@@ -3,8 +3,8 @@
       
         <Header />
         <!-- <Section2 /> -->
-        <HeroSection />
         <SectionA />
+        <HeroSection />
         <Section3 />
         <Section4 />
         <Footer />
