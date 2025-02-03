@@ -61,6 +61,7 @@
     height: 50%;
     width: 100%;
     background: $bgcolorblack;
+    background: black;
 
     
   }
@@ -71,6 +72,8 @@
     // border :solid;
     position:absolute;
     background: $bgcolorblack;
+    background: black;
+
   }
 
 
