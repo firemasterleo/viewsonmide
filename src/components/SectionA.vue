@@ -22,7 +22,7 @@ display: flex;
 
 
   .section {
-    background-color: #484848;
+    background-color: #8E8E8E;
     width: 80rem;
     height: 100vh; /* Full viewport height */
     margin-inline: auto;
