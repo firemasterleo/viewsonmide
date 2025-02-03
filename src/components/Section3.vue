@@ -108,10 +108,7 @@
         .inner-child {
           padding-inline: 1.2rem;
           border-top: solid 1px black;
-          background-color: #A9A9A9;
-  background-color: #8E8E8E;
-  background-color: #A9A9A9;
-  background-color: #A9A9A9;
+         background-color: #A9A9A9;
 
 
 
@@ -127,6 +124,9 @@
         align-items: center;
         height: 70%;
         overflow: hidden;
+        gap: 0.5rem;
+
+        
         
 
           h1 {
@@ -134,8 +134,7 @@
             font-size: 170px;
             font-weight: 400;
             color: $textcolorblackdeeper;
-          // border: solid black;
-  
+            color: #1A1A1A;  
   
           }
           .p-text {
@@ -156,9 +155,11 @@
             }
             p {
               // font-family: Grotesk;
-              font-weight: 500;
-              color: $textcolorblack;
-              // font-size: 14px;
+              font-weight: 700;
+              color: $textcolorblackdeeper;
+              font-size: 15px;
+              // border: solid;
+              // margin-top: 0.5rem;
     
               
     
