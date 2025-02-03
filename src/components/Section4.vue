@@ -245,18 +245,14 @@
   <style lang="scss" scoped>
   @import '/src/sass/variables';
   
-  .section1 {
-    height: 100vh;
-    background-color: $bgcolorwhite;
-  }
-  
   .sectioncontainer {
     background-color: #74787c;
     background-color: #111315;
-  
+    
     width: 100%;
     height: fit-content; /* Large enough to allow scrolling */
     display: flex;
+    overflow: hidden;
   
   
   
@@ -318,7 +314,7 @@
           }
     
           .work-text1 {
-            border: solid blue;
+            // border: solid blue;
             width: 33%;
             // background-color: $bgcolorblack; /* Solid black background */
             z-index: 7;
@@ -344,12 +340,16 @@
           }
     
           .work-text4 {
-            border: none;
+            // border: solid;
             // border: solid green;
             width: 100%;
             // background-color: $bgcolorblack; /* Solid black background */
             z-index: 4;
             overflow: hidden;
+
+            h1 {
+              
+            }
           }
   
         }
@@ -506,9 +506,9 @@
               align-items: center;
   
               h1 {
-                font-size: 31vw; /* Dynamically adjust font size */
-                // font-size: 15vw;
-                // border: solid red;
+
+              font-size: 33.5vw;
+
               }
             }
   
@@ -518,6 +518,7 @@
               // background-color: $bgcolorwhite; /* Solid black background */
               z-index: 7;
               overflow: hidden;
+              // display: none;
             }
   
             .work-text2 {
@@ -525,6 +526,8 @@
               // background-color: $bgcolorwhite; /* Solid black background */
               z-index: 6;
               overflow: hidden;
+              // display: none;
+
             }
   
             .work-text3 {
@@ -532,14 +535,23 @@
               // background-color: $bgcolorwhite; /* Solid black background */
               z-index: 5;
               overflow: hidden;
+              // display: none;
+
             }
   
             .work-text4 {
               // border: solid green;
-              width: 100%;
+              // width: fit-content;
               // background-color: $bgcolorwhite; /* Solid black background */
               z-index: 4;
               overflow: hidden;
+              // padding-inline: 1rem;
+              display: flex;
+              
+
+              h1 {
+// font-size: clamp(5rem, 33.5vw,33.5vw);
+              }
             }
           }
         }
