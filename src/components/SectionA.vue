@@ -5,6 +5,22 @@
             <div class="hero-text">
                 <p>"Welcome to my world through my Views—where every image speaks and every frame holds a story."</p>
             </div>
+            <div class="mid-text">
+                <div class="year">
+                    <p>2025</p>
+                </div>
+                <div class="projects">
+                    <p>FACELESS</p>
+                    <p>MUSIC VIDEOS-</p>
+                    <p>BERLIN 2025</p>
+                    <p>lASGIDI</p>
+                </div>
+                <div class="contact">
+                    <p class="email">HELLO@VIEWSONMIDE.COM</p>
+                    <p>INSTAGRAM</p>
+                    <p>LINKED-IN</p>
+                </div>
+            </div>
         </div>
 <div class="image-container">
     <div class="image image1">
@@ -52,12 +68,44 @@ position: relative;
 padding-inline: 1rem;
 .top-container {
     .hero-text {
-        margin-top: 12.5rem;
+        margin-top: 12rem;
 p {
     font-size: 22px;
     font-weight: 600;
     color: #1A1A1A;
 }
+    }
+    .mid-text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5.5rem;
+
+        p {
+            font-size: 12px;
+            font-weight: 100;
+            color: #1A1A1A;
+            font-family: "Audiowide", serif;        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            p{
+                padding-bottom: 4px;
+                
+                border-bottom: solid 1px;
+            }
+
+            .email {
+                margin-bottom: 1rem;
+
+            }
+        }
     }
 }
 
