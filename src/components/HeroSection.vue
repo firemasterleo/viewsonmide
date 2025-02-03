@@ -31,7 +31,8 @@
             justify-content: center;
             position: relative;
             z-index: 0;
-            // overflow: hidden;
+
+            overflow: hidden;
             .hero-img {
                 // border: solid red;
                 width: 100%;
@@ -39,9 +40,19 @@
                 object-fit: cover;
                 object-position: center 0%;
                 position: absolute;
+                animation: scaleDown 20s ease-in-out forwards; /* Runs once over 15 seconds */
+
                 // top: 0rem;
 
             }
+            @keyframes scaleDown {
+    from {
+        transform: scale(1.5);  /* Start at normal size */
+    }
+    to {
+        transform: scale(1); /* Scale down to 80% */
+    }
+}
 
             .veil {
             // border: solid yellow;

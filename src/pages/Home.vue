@@ -4,7 +4,7 @@
         <Header />
         <!-- <Section2 /> -->
         <SectionA />
-        <HeroSection />
+        <!-- <HeroSection /> -->
         <Section3 />
         <Section4 />
         <Footer />
