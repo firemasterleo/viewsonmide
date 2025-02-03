@@ -1,7 +1,20 @@
 <template>
     <div class="sectioncontainer">
       <div class="section">
+<div class="image-container">
+    <div class="image image1">
+        <img src="../assets/vom-image1.jpeg" loading="lazy" alt="">
 
+    </div>
+    <div class="image image2">
+        <img src="../assets/vom-image6.jpeg" loading="lazy" alt="">
+        
+    </div>
+    <div class="image image3">
+        <img src="../assets/vom-image3.jpeg" loading="lazy" alt="">
+
+    </div>
+</div>
   
       </div>
     </div>
@@ -32,7 +45,35 @@ background-color: #8E8E8E;
     margin-inline: auto;
 position: relative;
 
+.image-container {
+    position: absolute;
+    bottom: 0;
+    display: flex;
 
+   align-items: flex-end;
+    .image {
+        flex: 1;
+
+        img {
+            align-items: flex-end;
+            // border: solid red;
+            // align-self: end; /* Moves the image to the bottom */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .image1 {
+        height: 15rem;
+    }
+    .image2 {
+height: 20rem;
+    }
+    .image3 {
+        height: 25rem;
+
+    }
+}
   }
 }
 
