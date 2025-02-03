@@ -46,11 +46,8 @@
             .veil {
             // border: solid yellow;
             // background-color: rgba(0, 0, 0, 0.893);
-            background: linear-gradient(
-                to top,
-                rgb(0, 0, 0), /* Least transparent at the top */
-                rgba(0, 0, 0, 0.708)  /* 0.854 Darker and less transparent at the bottom */
-            );
+            background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgb(50, 50, 50) 40%, rgba(0, 0, 0, 0) 100%);
+            mix-blend-mode: multiply;  /* Helps blend better */
             width: 100%;
             height: 100%;
             position: absolute;
