@@ -89,7 +89,9 @@
                 background: transparent;
                 
                 
+                
                 h1 {
+                    -webkit-tap-highlight-color: transparent;
                     color: #1A1A1A;
                     mix-blend-mode: difference;
                     position: relative; /* Ensure it stays in front */
@@ -119,6 +121,7 @@
                         // border : solid black;
                         // padding-inline: 0.2rem;
                         p {
+                            -webkit-tap-highlight-color: transparent;
 
                             font-size: 14px;
                             font-weight: 600;

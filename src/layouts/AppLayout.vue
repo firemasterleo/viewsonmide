@@ -127,7 +127,7 @@ svg {
 
 }
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 500ms ease-out;
+  transition: opacity 300ms ease-out;
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0;

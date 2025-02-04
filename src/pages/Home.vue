@@ -63,7 +63,7 @@ onBeforeUnmount(() => {
       mm.revert(); // Revert matchMedia if necessary
   
     });
-  },500); // important Adjust the timeout duration to balance
+  },300); // important Adjust the timeout duration to balance with the router .fade-enter-active, .fade-leave-active in applayout
 
   
 });  
