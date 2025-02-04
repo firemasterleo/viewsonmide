@@ -246,13 +246,14 @@
   @import '/src/sass/variables';
   
   .sectioncontainer {
-    background: #0A0A0A;
+    // background: #0A0A0A;
 
     
     width: 100%;
     height: fit-content; /* Large enough to allow scrolling */
     display: flex;
     overflow: hidden;
+    
   
   
   
@@ -262,6 +263,9 @@
       // height: 155rem;
       margin-inline: auto;
       // border: solid green;
+      background-color: $bgcolorblack; /* Solid black background */
+      
+
   
   
       .work-header {
@@ -285,7 +289,7 @@
   
           // border: purple solid;
           background-color: $bgcolorblack; /* Solid black background */
-    background: #0A0A0A;
+    // background: #0A0A0A;
 
           
           // display: flex;
@@ -301,7 +305,7 @@
             // height: 100%;
             // top: 0;
            background-color: $bgcolorblack; /* Solid black background */
-           background: #0A0A0A;
+          //  background: #0A0A0A;
 
 
             h1 {
@@ -394,7 +398,7 @@
               z-index: 1;
               width: 100%;
               height: 100%;
-              background-color: rgba(0, 0, 0, 0.406);
+              background-color: rgba(0, 0, 0, 0.183);
               transition: all 0.1s ease-in;
   
             }
@@ -445,7 +449,7 @@
         // border: solid blue;
         border-radius: 0 0 2rem 2rem;
         background-color: $bgcolorblack;
-    background: #0A0A0A;
+    // background: #0A0A0A;
 
         // white-space: nowrap;
         display: flex;
