@@ -70,16 +70,19 @@
 
     margin-inline: auto;
     // padding-top: 4rem;
-    padding-inline: 0.5rem;
     // border: solid blue;
     overflow: hidden;
     
     
+    
     .footer {
+        // padding-inline: 0.5rem;
         // margin-top: 20rem;
         // border: solid red;
         padding-top: 6rem;
         height: 100%;
+        background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+        background-color: #8E8E8E;
 
 
     }
@@ -99,6 +102,8 @@
             .logo {
                 margin-bottom: 1rem;
                 color: #7e848a;
+    color: #1A1A1A;
+
                 letter-spacing: 6px;
             }
 
@@ -108,6 +113,7 @@
 
                 svg {
                     fill: #7e848a;
+                    fill: #1A1A1A;
                 }
             }
         }
@@ -121,6 +127,8 @@
             font-size: 13px;
             font-weight: 400;
             color: #7e848a;
+    color: #1A1A1A;
+
 
             ul {
                 li {
@@ -142,6 +150,9 @@
         h1 {
             font-size: 32vw;
             color: #7e848a;
+    color: #1A1A1A;
+
+            
 
         }
         :nth-child(2) {
@@ -151,7 +162,7 @@
     }
 
     .bottom-container {
-        border-top: solid 1px #7e848a;
+        border-top: solid 1px #1A1A1A;
         width: 100%;
         display: flex;
         align-items: center;
@@ -159,6 +170,8 @@
         height: 6.5rem;
         font-size: 12px;
         color: #7e848a;
+    color: #1A1A1A;
+
         position: absolute;
         bottom: 1rem;
 
@@ -174,7 +187,7 @@
     }
 
     .underline {
-        border-top: solid 1px #7e848a;
+        border-top: solid 2px #1A1A1A;
         width: 90%;
         position: absolute;
         left: 2.7rem;

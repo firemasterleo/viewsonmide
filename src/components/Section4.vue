@@ -300,8 +300,8 @@
             // border: solid green;
             // height: 100%;
             // top: 0;
-          background-color: $bgcolorblack; /* Solid black background */
-    background: #0A0A0A;
+           background-color: $bgcolorblack; /* Solid black background */
+           background: #0A0A0A;
 
 
             h1 {
@@ -377,6 +377,8 @@
           // border: solid blue;
           display: flex;
           cursor: pointer;
+          padding: 0.5rem;
+          background-color: #8E8E8E;
           
           .image {
             border-radius: 0.7rem;
@@ -443,6 +445,8 @@
         // border: solid blue;
         border-radius: 0 0 2rem 2rem;
         background-color: $bgcolorblack;
+    background: #0A0A0A;
+
         // white-space: nowrap;
         display: flex;
         gap: 1.3rem;
