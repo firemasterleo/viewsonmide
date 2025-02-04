@@ -82,7 +82,7 @@
         padding-top: 6rem;
         height: 100%;
         background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-        background-color: #8E8E8E;
+        background-color: #C2C2C2;
 
 
     }

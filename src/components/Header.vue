@@ -67,7 +67,7 @@
             // border: solid red;
             // width: 62rem;
             width: 100%;
-            background-color: #8e8e8ebd;
+            background-color: #C2C2C2;
             backdrop-filter: blur(20px);
             height: 4rem;
             // border-radius: 2rem;
