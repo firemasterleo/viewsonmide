@@ -5,7 +5,7 @@
             <header class="header">
                 <router-link to="/">
                 <div class="logo">
-                        <h1>VOM</h1>
+                        <h1 role="button" tabindex="0">VOM</h1>
                         
                         
                     </div>
@@ -79,6 +79,8 @@
             align-items: center;
             overflow: hidden;
             z-index: 20;
+            -webkit-tap-highlight-color: transparent;
+
             .logo{
                 // border-right: solid 2px #7cae65;
                 // border: solid red;
@@ -87,19 +89,21 @@
                 font-size: 12px;
                 position: relative; /* Ensure proper layering */
                 background: transparent;
+
                 
                 
                 
                 h1 {
-                    -webkit-tap-highlight-color: transparent;
                     color: #1A1A1A;
                     mix-blend-mode: difference;
                     position: relative; /* Ensure it stays in front */
                     z-index: 2; /* Ensures it stays in front */
+                    cursor: pointer; /* Make it behave like a button */
 
-
-
-}
+                    }
+                h1:active {
+                transform: scale(1.05);
+                }
             }
             .nav-bar {
                 // border: solid red;
@@ -136,6 +140,9 @@
 
 
                         }
+                        p:active {
+                transform: scale(1.05);
+                }
                     }
 
                 }
