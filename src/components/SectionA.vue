@@ -59,7 +59,7 @@ z-index: 9;
 
   .section {
 background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-background-color: #8E8E8E;
+background-color: #B5B5B5;
 
     width: 80rem;
     height: 100vh; /* Full viewport height */
