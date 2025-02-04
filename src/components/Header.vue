@@ -67,8 +67,8 @@
             // border: solid red;
             // width: 62rem;
             width: 100%;
-            // background-color: #d6d9d576;
-            // backdrop-filter: blur(17px);
+            background-color: #8e8e8ebd;
+            backdrop-filter: blur(20px);
             height: 4rem;
             // border-radius: 2rem;
             padding-left: 1rem;
@@ -95,14 +95,13 @@
                 
                 h1 {
                     color: #1A1A1A;
-                    mix-blend-mode: difference;
                     position: relative; /* Ensure it stays in front */
                     z-index: 2; /* Ensures it stays in front */
                     cursor: pointer; /* Make it behave like a button */
 
                     }
                 h1:active {
-                transform: scale(1.05);
+                transform: scale(1.1);
                 }
             }
             .nav-bar {
@@ -141,8 +140,8 @@
 
                         }
                         p:active {
-                transform: scale(1.05);
-                }
+                            transform: scale(1.1);
+                        }
                     }
 
                 }
