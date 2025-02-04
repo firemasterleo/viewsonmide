@@ -246,8 +246,8 @@
   @import '/src/sass/variables';
   
   .sectioncontainer {
-    background-color: #74787c;
-    background-color: #111315;
+    background: #0A0A0A;
+
     
     width: 100%;
     height: fit-content; /* Large enough to allow scrolling */
@@ -285,6 +285,8 @@
   
           // border: purple solid;
           background-color: $bgcolorblack; /* Solid black background */
+    background: #0A0A0A;
+
           
           // display: flex;
           display: flex;
@@ -299,6 +301,8 @@
             // height: 100%;
             // top: 0;
           background-color: $bgcolorblack; /* Solid black background */
+    background: #0A0A0A;
+
 
             h1 {
               // font-size: clamp(400px, 0vw,400px); 
@@ -365,6 +369,7 @@
         position: relative;
         z-index: 2;
         height: fit-content;
+        
   
   
         .project {
@@ -448,17 +453,22 @@
   
         .inner-scroller {
           // width: 50rem;
-          color: $textcolorblack;
+          // color: $textcolorblack;
           // margin-inline: 2rem;
           display: flex;
           gap: 1rem;
           animation: scrollAnimation 5s linear infinite;
-  
-          p {
-            // margin-inline: 40px;
-            white-space: nowrap;
-            color: $textcolorwhite;
+
+          div {
+
+            p {
+              // border: solid;
+              // margin-inline: 40px;
+              white-space: nowrap;
+              color: $textcolorwhite;
+            }
           }
+  
   
           .svg {
             min-width: 1rem;
@@ -475,6 +485,7 @@
   
   @media (max-width: 800px) {
     .sectioncontainer {
+
       .section {
         width: 100vw;
         // border-radius: 0 0 1rem 1rem;
@@ -482,7 +493,7 @@
         .work-header {
           height: 16rem;
           background-color: $bgcolorwhite;
-          position: relative;
+
           // display: flex;
           // justify-content: center;
           // align-items: center;
@@ -496,6 +507,7 @@
             width: 100%;
             display: flex;
             align-items: center;
+            
   
             .work-text {
               position: absolute;
@@ -519,6 +531,7 @@
               z-index: 7;
               overflow: hidden;
               // display: none;
+              
             }
   
             .work-text2 {
@@ -527,6 +540,7 @@
               z-index: 6;
               overflow: hidden;
               // display: none;
+
 
             }
   
@@ -598,7 +612,7 @@
                 // margin-inline: 40px;
                 white-space: nowrap;
                 font-size: 22px;
-                color: $textcolorblackdeepest;
+                color: $textcolorwhite;
               }
             }
   

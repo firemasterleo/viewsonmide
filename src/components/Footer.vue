@@ -17,25 +17,32 @@
                 <div class="right-container">
                     <ul class="nav-links-1">
                         <li class="nav-item">
-                            <p>Home </p>
+                            <p>About</p>
                         </li>
                         <li class="nav-item">
-                            <p>Portfolio </p>
+                            <p>work</p>
                         </li>
                         <li class="nav-item">
-                            <p>About Views On Mide</p>
-                        </li>
-                        <li class="nav-item">
-                            <p>Contact</p>
+                            <p>Scroll to top</p>
                         </li>
                     </ul>
         
                 </div>
     
             </div>
+            <div class="mid-container">
+                <h1>
+                    Lets
+                    
+                </h1>
+                <h1>
+                    talk
+
+                </h1>
+            </div>
             <div class="bottom-container">
                 <div class="bottom-left">
-                    <p>© 2024 Views On Mide. ALL RIGHTS RESERVED</p>
+                    <p>© 2025 ViewsOnMide. ALL RIGHTS RESERVED</p>
                     <ul class="terms-privacy">
                         <li>Terms</li>
                         <li>Privacy</li>
@@ -43,36 +50,7 @@
                 </div>
     
             </div>
-            <div class="bottom-container">
-                <div class="bottom-left">
-                    <p>© 2024 Views On Mide. ALL RIGHTS RESERVED</p>
-                    <ul class="terms-privacy">
-                        <li>Terms</li>
-                        <li>Privacy</li>
-                    </ul>
-                </div>
     
-            </div>
-            <div class="bottom-container">
-                <div class="bottom-left">
-                    <p>© 2024 Views On Mide. ALL RIGHTS RESERVED</p>
-                    <ul class="terms-privacy">
-                        <li>Terms</li>
-                        <li>Privacy</li>
-                    </ul>
-                </div>
-    
-            </div>
-            <div class="bottom-container">
-                <div class="bottom-left">
-                    <p>© 2024 Views On Mide. ALL RIGHTS RESERVED</p>
-                    <ul class="terms-privacy">
-                        <li>Terms</li>
-                        <li>Privacy</li>
-                    </ul>
-                </div>
-    
-            </div>
 
         </div>
 
@@ -100,7 +78,8 @@
     .footer {
         // margin-top: 20rem;
         // border: solid red;
-        // padding-top: 20vh;
+        padding-top: 6rem;
+        height: 100%;
 
 
     }
@@ -157,6 +136,19 @@
             }
         }
     }
+    .mid-container {
+        // border: solid red;
+        padding-top: 5rem;
+        h1 {
+            font-size: 32vw;
+            color: #7e848a;
+
+        }
+        :nth-child(2) {
+            text-align: right;
+            margin-top: -5rem;
+        }
+    }
 
     .bottom-container {
         border-top: solid 1px #7e848a;
@@ -167,6 +159,8 @@
         height: 6.5rem;
         font-size: 12px;
         color: #7e848a;
+        position: absolute;
+        bottom: 1rem;
 
         .bottom-left {
             display: flex;
